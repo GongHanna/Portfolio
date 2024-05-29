@@ -1,13 +1,280 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="utf-8">
   <title>portfolio</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-  <script src="../assets/jquery-3.7.1.min.js"></script>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./images/favicon/site.webmanifest">
+  <!-- og -->
+  <meta property="og:title" content="HANNA'S PORTFOLIO">
+  <meta property="og:url" content="https://gonghanna.github.io/Portfolio/">
+  <meta property="og:image" content="https://gonghanna.github.io/Portfolio/images">
+  <meta property="og:description" content="안녕하세요, 공한나의 포트폴리오 입니다.">
+  <meta property="og:type" content="website">
+  <!-- reset css -->
+  <link rel="stylesheet" href="./assets/styles/reset.css">
+  <!-- 공통된 css style -->
+  <link rel="stylesheet" href="./assets/styles/variable.css">
+  <link rel="stylesheet" href="./assets/styles/global.css">
+  <link rel="stylesheet" href="./assets/styles/animation.css">
+  <link rel="stylesheet" href="./assets/styles/swiper-bundle.min.css">
+  <!-- page 별 css style -->
+  <link rel="stylesheet" href="./index.css">
+  <!-- jQuery -->
+  <script src="./assets/js/jquery-3.7.1.min.js"></script>
+  <!-- pulgIn -->
+  <script src="./assets/js/gsap.min.js"></script>
+  <script src="./assets/js/ScrollTrigger.min.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <!-- page 별 사용되는 js -->
+  <script defer src="./index.js"></script>
 </head>
 
 <body>
-  
+  <!-- header -->
+  <header class="header">
+    <h1 class="logo">
+      <a href="./index.html"><img src="./images/logo-black.svg" alt="logo">로고</a>
+    </h1> 
+
+    <!-- side-menu -->
+    <div class="side-menu-wrapper">
+      <!-- side-menu-button -->
+      <div class="side-menu-btn">
+        <span class="bar1">버튼모양1</span>
+        <span class="bar2">버튼모양2</span>
+        <span class="bar3">버튼모양3</span>
+      </div>
+      <!-- side-menu-list / button 클릭 시 내용 보임 -->
+      <ul class="side-menu">
+        <li><a href="#home">HOME </a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#project">PROJECT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+      <!-- code -->
+      <p class="code-desc">&lt;div class="menu"&gt;</p>
+    </div>
+  </header>
+
+  <!-- ------ contents ------ -->
+  <!-- main-contents -->
+   <section class="main-contents">
+    <h2 class="main-title">Web Publisher,<br>Hanna&#39;s Portfolio</h2>
+    <!-- svg-wrapper -->
+    <div class="svg-wrapper">
+      <svg class="first-character" width="819" height="526" viewBox="0 0 819 526" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <mask id="mask0_26_986" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="819" height="526">
+        <rect width="819" height="526" fill="white"/>
+        </mask>
+        <g mask="url(#mask0_26_986)">
+        <path d="M808 457C808 707.185 624.416 577.999 355 629.259C92.1408 564.289 -98 707.185 -98 457C-98 206.815 104.815 4 355 4C605.185 4 808 206.815 808 457Z" fill="#D1263D"/>
+        <circle cx="247.956" cy="138.954" r="61.0433" fill="white"/>
+        <circle cx="460.851" cy="138.954" r="61.0433" fill="white"/>
+        <circle cx="238.371" cy="113.225" r="35.3143" fill="#222225"/>
+        <circle cx="453.284" cy="113.225" r="35.3143" fill="#222225"/>
+        <path d="M294.014 288.302C293.358 290.848 289.977 291.379 288.572 289.156L269.968 259.699C268.693 257.681 270.171 255.055 272.557 255.097L298.631 255.553C300.57 255.587 301.968 257.423 301.484 259.301L294.014 288.302Z" fill="white"/>
+        <path d="M232.16 243.88C230.332 243.251 228.34 244.223 227.711 246.051C227.083 247.879 228.054 249.87 229.882 250.499L232.16 243.88ZM229.882 250.499C248.646 256.956 277.586 262.952 303.37 259.722C316.293 258.104 328.659 254.138 338.537 246.519C348.491 238.841 355.68 227.631 358.446 212.038L351.554 210.815C349.075 224.786 342.763 234.418 334.262 240.976C325.684 247.592 314.641 251.256 302.5 252.777C278.156 255.826 250.351 250.139 232.16 243.88L229.882 250.499Z" fill="white"/>
+        <path d="M478.979 247.19C442.024 259.905 365.491 270.555 355 211.426" stroke="white" stroke-width="7" stroke-linecap="round"/>
+        <path d="M357.002 214.079C355.847 216.079 352.961 216.079 351.806 214.079L342.032 197.151C340.878 195.151 342.321 192.651 344.63 192.651L364.177 192.651C366.487 192.651 367.93 195.151 366.776 197.151L357.002 214.079Z" fill="white"/></g>
+      </svg>
+      <svg class="second-character" width="778" height="394" viewBox="0 0 778 394" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <mask id="mask0_26_1001" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="778" height="394">
+        <rect width="778" height="394" fill="white"/>
+        </mask>
+        <g mask="url(#mask0_26_1001)">
+        <path d="M769 384C769 593.868 615 485.5 389 528.5C168.5 474 9 593.868 9 384C9 174.132 179.132 4 389 4C598.868 4 769 174.132 769 384Z" fill="#222225"/>
+        <circle cx="299.206" cy="117.206" r="51.2063" fill="white"/>
+        <circle cx="477.794" cy="117.206" r="51.2063" fill="white"/>
+        <circle cx="291.166" cy="95.6235" r="29.6235" fill="#222225"/>
+        <circle cx="471.446" cy="95.6235" r="29.6235" fill="#222225"/>
+        <path d="M367 207L379.095 199.092C379.688 198.704 380.167 198.166 380.484 197.533L385.241 188.017C386.653 185.194 390.625 185.042 392.249 187.748L401.239 202.731C401.73 203.55 402.498 204.166 403.404 204.468L411 207V229C411 241.15 401.15 251 389 251C376.85 251 367 241.15 367 229V207Z" fill="#D1263D"/>
+        <path d="M286.139 204.69C284.311 204.062 282.319 205.033 281.69 206.861C281.062 208.689 282.033 210.681 283.861 211.31L286.139 204.69ZM283.861 211.31C299.648 216.741 324.015 221.796 345.76 219.073C356.663 217.707 367.144 214.356 375.535 207.884C384.001 201.353 390.102 191.823 392.446 178.611L385.554 177.389C383.498 188.977 378.274 196.931 371.259 202.341C364.169 207.81 355.012 210.859 344.89 212.127C324.585 214.67 301.352 209.925 286.139 204.69L283.861 211.31Z" fill="white"/>
+        <path d="M493 208C462 218.667 397.8 227.6 389 178" stroke="white" stroke-width="7" stroke-linecap="round"/>
+        <path d="M391.098 179.5C389.943 181.5 387.057 181.5 385.902 179.5L378.541 166.75C377.386 164.75 378.829 162.25 381.139 162.25L395.861 162.25C398.171 162.25 399.614 164.75 398.459 166.75L391.098 179.5Z" fill="white"/></g>
+      </svg>
+      <svg class="last-character" width="663" height="462" viewBox="0 0 663 462" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <mask id="mask0_26_1016" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="663" height="462">
+        <rect width="663" height="462" fill="white"/>
+        </mask>
+        <g mask="url(#mask0_26_1016)">
+        <path d="M763 390C763 599.868 609 491.5 383 534.5C162.5 480 3 599.868 3 390C3 180.132 173.132 10 383 10C592.868 10 763 180.132 763 390Z" fill="#D1263D"/>
+        <circle cx="293.206" cy="123.206" r="51.2063" fill="white"/>
+        <circle cx="471.794" cy="123.206" r="51.2063" fill="white"/>
+        <circle cx="285.166" cy="101.623" r="29.6235" fill="#222225"/>
+        <circle cx="465.446" cy="101.623" r="29.6235" fill="#222225"/>
+        <path d="M280.139 210.69C278.311 210.062 276.319 211.033 275.69 212.861C275.062 214.689 276.033 216.681 277.861 217.31L280.139 210.69ZM277.861 217.31C293.648 222.741 318.015 227.796 339.76 225.073C350.663 223.707 361.144 220.356 369.535 213.884C378.001 207.353 384.102 197.823 386.446 184.611L379.554 183.389C377.498 194.977 372.274 202.931 365.259 208.341C358.169 213.81 349.012 216.859 338.89 218.127C318.585 220.67 295.352 215.925 280.139 210.69L277.861 217.31Z" fill="white"/>
+        <path d="M487 214C456 224.667 391.8 233.6 383 184" stroke="white" stroke-width="7" stroke-linecap="round"/>
+        <path d="M385.098 185.5C383.943 187.5 381.057 187.5 379.902 185.5L372.541 172.75C371.386 170.75 372.829 168.25 375.139 168.25L389.861 168.25C392.171 168.25 393.614 170.75 392.459 172.75L385.098 185.5Z" fill="white"/>
+        <path d="M435.914 252.404C436.57 254.951 439.951 255.481 441.355 253.258L459.96 223.801C461.235 221.783 459.757 219.158 457.371 219.199L431.297 219.655C429.358 219.689 427.96 221.525 428.444 223.403L435.914 252.404Z" fill="white"/></g>
+      </svg>
+    </div>
+    <!-- code -->
+    <p class="code-desc">&lt;div class="main"&gt;</p>
+   </section>
+
+  <!-- keyword-contents -->
+   <section class="keyword-contents">
+    <!-- 키워드 소개 -->
+    <ul class="keyword-wrapper">
+      <li>
+        <h3 class="keyword-title"># Passion</h3>
+        <p class="keyword-desc">새로운 기술과 트렌드를 배우고자 하는 열정</p>
+      </li>
+      <li>
+        <h3 class="keyword-title"># Team Collaboration</h3>
+        <p class="keyword-desc">팀 원들과의 원활한 소통과 협업 능력</p>
+      </li>
+      <li>
+        <h3 class="keyword-title"># Problem Solving</h3>
+        <p class="keyword-desc">문제를 분석하고 해결하는 능력.</p>
+      </li>
+    </ul>
+ 
+    <!-- who am i -->
+    <div class="introduction-wrapper">
+      <h2 class="title">WHO I AM ?</h2>
+      <!-- 랜덤으로 텍스트가 계속 바뀌는 이벤트 적용 -->
+      <p class="random-keyword"># 지속적인 학습자</p>
+      <p class="random-keyword"># 문제를 창의적으로 해결하는</p>
+      <p class="random-keyword"># 작은 부분까지 신경 쓰는 꼼꼼한</p>
+      <p class="random-keyword"># 공한나 입니다.</p>
+      <svg class="my-charactor" width="744" height="440" viewBox="0 0 744 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <mask id="mask0_26_963" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="744" height="440">
+        <rect width="744" height="440" rx="30" fill="#D1263D"/>
+        </mask>
+        <g mask="url(#mask0_26_963)">
+        <path d="M752 388C752 597.868 548 406 372.5 498.5C219.5 404.5 -8 597.868 -8 388C-8 178.132 162.132 8 372 8C581.868 8 752 178.132 752 388Z" fill="#222225"/>
+        <circle cx="282.206" cy="121.206" r="51.2063" fill="white"/>
+        <circle cx="460.794" cy="121.206" r="51.2063" fill="white"/>
+        <circle cx="274.166" cy="99.6235" r="29.6235" fill="#222225"/>
+        <circle cx="454.446" cy="99.6235" r="29.6235" fill="#222225"/>
+        <path d="M350 211L362.095 203.092C362.688 202.704 363.167 202.166 363.484 201.533L368.241 192.017C369.653 189.194 373.625 189.042 375.249 191.748L384.239 206.731C384.73 207.55 385.498 208.166 386.404 208.468L394 211V233C394 245.15 384.15 255 372 255C359.85 255 350 245.15 350 233V211Z" fill="#D1263D"/>
+        <path d="M269.139 208.69C267.311 208.062 265.319 209.033 264.69 210.861C264.062 212.689 265.033 214.681 266.861 215.31L269.139 208.69ZM266.861 215.31C282.648 220.741 307.015 225.796 328.76 223.073C339.663 221.707 350.144 218.356 358.535 211.884C367.001 205.353 373.102 195.823 375.446 182.611L368.554 181.389C366.498 192.977 361.274 200.931 354.259 206.341C347.169 211.81 338.012 214.859 327.89 216.127C307.585 218.67 284.352 213.925 269.139 208.69L266.861 215.31Z" fill="white"/>
+        <path d="M476 212C445 222.667 380.8 231.6 372 182" stroke="white" stroke-width="7" stroke-linecap="round"/>
+        <path d="M374.098 183.5C372.943 185.5 370.057 185.5 368.902 183.5L361.541 170.75C360.386 168.75 361.829 166.25 364.139 166.25L378.861 166.25C381.171 166.25 382.614 168.75 381.459 170.75L374.098 183.5Z" fill="white"/>
+        <rect x="238.5" y="342.5" width="266.61" height="78.4959" rx="28.5" fill="white" stroke="white" stroke-width="3"/>
+        <rect x="244.853" y="348.24" width="254.517" height="67.0153" rx="24.5" fill="white" stroke="black"/>
+        <path d="M312.52 368H320.44V396H312.52V368ZM301.72 396H293.8V368H301.72V396ZM313.08 385.08H301.16V378.52H313.08V385.08ZM322.667 396L335.027 368H342.827L355.227 396H346.987L337.307 371.88H340.427L330.747 396H322.667ZM329.427 390.56L331.467 384.72H345.147L347.187 390.56H329.427ZM357.472 396V368H363.992L379.432 386.64H376.352V368H384.112V396H377.592L362.152 377.36H365.232V396H357.472ZM389.698 396V368H396.218L411.658 386.64H408.578V368H416.338V396H409.818L394.378 377.36H397.458V396H389.698ZM418.565 396L430.925 368H438.725L451.125 396H442.885L433.205 371.88H436.325L426.645 396H418.565ZM425.325 390.56L427.365 384.72H441.045L443.085 390.56H425.325Z" fill="#222225"/>
+        <path d="M500 358C542.073 353.407 691.895 245.729 696 185" stroke="white" stroke-width="5"/>
+        <path d="M245 358C202.927 353.407 53.1047 245.729 49 185" stroke="white" stroke-width="5"/></g>
+      </svg>
+    </div>
+    <!-- code -->
+    <p class="code-desc">&lt;div class="keyword"&gt;</p>
+   </section>
+
+  <!-- skill-contents -->
+   <section class="skill-contents"> 
+    <div class="text-box">
+      <h2 class="title">SKILLS</h2>
+      <p class="desc">Click the Box!</p>
+    </div>
+
+    <!-- skill 소개 박스 / 클릭 이벤트 -->
+    <ul class="skill-wrapper">
+      <li>
+        <h3 class="skill-name">HTML5 / CSS3</h3>
+        <div class="skill-text-box">
+          <p class="skill-desc">웹 페이지 구조화와 콘텐츠 마크업</p>
+          <p class="skill-desc">웹 표준 및 접근성 준수를 위한 검사 및 수정 능력</p>
+          <p class="skill-desc">스타일링과 레이아웃 디자인</p>
+          <p class="skill-desc">Flex 및 Grid 레이아웃 활용</p>
+          <p class="skill-desc">CSS Animation을 활용한 모션 구현</p>
+          <p class="skill-desc">미디어 쿼리를 이용한 반응형 웹 제작</p>
+        </div>
+      </li>
+      <li>
+        <h3 class="skill-name">JavaScript & jQeury</h3>
+        <div class="skill-text-box">
+          <p class="skill-desc">ES6+ 문법 활용</p>
+          <p class="skill-desc">AJAX를 활용한 비동기 통신 및 데이터 처리</p>
+          <p class="skill-desc">학습내용을 바탕으로 동적인 웹페이지를 구현</p>
+          <p class="skill-desc">적절한 Plugin 사용 방법 및 제어 방법</p>
+          <p class="skill-desc">scroll, mouse 이벤트 제어</p>
+          <p class="skill-desc">jQuery를 이용한 DOM 조작과 이벤트 처리</p>
+          <p class="skill-desc">함수형 프로그래밍 개념 이해</p>
+        </div>
+      </li>
+      <li>
+        <h3 class="skill-name">Git / Github / React</h3>
+        <div class="skill-text-box">
+          <p class="skill-desc">Git을 이용한 버전 관리</p>
+          <p class="skill-desc">GitHub를 통해 팀 프로젝트 실시간 공유 및 협업</p>
+          <p class="skill-desc">충돌 해결 능력 및 프로젝트 관리</p>
+          <p class="skill-desc">css-modules, Styled-Component, Bootstrap</p>
+        </div>
+      </li>
+      <li>
+        <h3 class="skill-name">Others</h3>
+        <div class="skill-text-box">
+          <p class="skill-desc">사용자 분석을 통한 UI/UX 디자인</p>
+          <p class="skill-desc">Figma를 활용한 프로토타입 제작</p>
+          <p class="skill-desc">디자인 도구를 사용한 그래픽 디자인 및 프로토타입 제작</p>
+          <p class="skill-desc">웹 사이트 디자인 시안 작업 및 디자인 시스템 구축</p>
+          <p class="skill-desc">와이어프레임 및 디자인 구성 활용 가능</p>
+        </div>
+      </li>
+    </ul>
+    <!-- code -->
+    <p class="code-desc">&lt;div class="skills"&gt;</p>
+   </section>
+
+  <!-- project-contents / 가로 스크롤 영역 -->
+   <section class="project-contents">
+    <div class="project-box">
+      <svg class="project-eyes" width="188" height="28" viewBox="0 0 188 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <mask id="mask0_24_1852" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="94" height="28">
+        <rect width="94" height="28" rx="14" fill="white"/>
+        </mask>
+        <g mask="url(#mask0_24_1852)">
+        <rect width="94" height="28" rx="14" fill="white"/>
+        <circle cx="36.5" cy="9.5" r="16.5" fill="#222225"/>
+        </g>
+        <mask id="mask1_24_1852" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="94" y="0" width="94" height="28">
+        <rect x="94" width="94" height="28" rx="14" fill="white"/>
+        </mask>
+        <g mask="url(#mask1_24_1852)">
+        <rect x="94" width="94" height="28" rx="14" fill="white"/>
+        <circle cx="130.5" cy="9.5" r="16.5" fill="#222225"/></g>
+      </svg>
+      <h2 class="title"></h2>
+    </div>
+
+  <!-- 가로 스크롤 -->
+  <ul class="project-wrapper">
+    <li class="project1">
+      <img src="" alt="">
+      <h3 class="project-name"></h3>
+      <p class="project-desc"></p>
+      <a href="" class="more-btn"></a>
+    </li>
+    <li class="project2">
+      <img src="" alt="">
+      <h3 class="project-name"></h3>
+      <p class="project-desc"></p>
+      <a href="" class="more-btn"></a>
+    </li>
+    <li class="project3">
+      <img src="" alt="">
+      <h3 class="project-name"></h3>
+      <p class="project-desc"></p>
+      <a href="" class="more-btn"></a>
+    </li>
+  </ul>
+
+   </section>
+  <!-- main-contents -->
+   <section class="main-contents">
+
+   </section>
 </body>
+
 </html>
