@@ -14,7 +14,7 @@
   <!-- og -->
   <meta property="og:title" content="HANNA'S PORTFOLIO">
   <meta property="og:url" content="https://gonghanna.github.io/Portfolio/">
-  <meta property="og:image" content="https://gonghanna.github.io/Portfolio/images">
+  <meta property="og:image" content="https://gonghanna.github.io/Portfolio/images/og-img.png">
   <meta property="og:description" content="안녕하세요, 공한나의 포트폴리오 입니다.">
   <meta property="og:type" content="website">
   <!-- reset css -->
@@ -33,6 +33,7 @@
   <script src="./assets/js/ScrollTrigger.min.js"></script>
   <script src="./assets/js/swiper-bundle.min.js"></script>
   <!-- page 별 사용되는 js -->
+  <script defer src="./assets/js/global.js"></script>
   <script defer src="./index.js"></script>
 </head>
 
@@ -40,7 +41,7 @@
   <!-- header -->
   <header class="header">
     <h1 class="logo">
-      <a href="./index.html"><img src="./images/logo-black.svg" alt="logo">로고</a>
+      <a href="./index.html">로고</a>
     </h1> 
 
     <!-- side-menu -->
@@ -53,7 +54,7 @@
       </div>
       <!-- side-menu-list / button 클릭 시 내용 보임 -->
       <ul class="side-menu">
-        <li><a href="#home">HOME </a></li>
+        <li><a href="./index.html">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#skills">SKILLS</a></li>
         <li><a href="#project">PROJECT</a></li>
@@ -64,7 +65,7 @@
     </div>
   </header>
 
-  <!-- ------ contents ------ -->
+  <!-- contents -->
   <!-- main-contents -->
    <section class="main-contents">
     <h2 class="main-title">Web Publisher,<br>Hanna&#39;s Portfolio</h2>
@@ -121,7 +122,7 @@
    </section>
 
   <!-- keyword-contents -->
-   <section class="keyword-contents">
+   <section class="keyword-contents" id="about">
     <!-- 키워드 소개 -->
     <ul class="keyword-wrapper">
       <li>
@@ -172,7 +173,7 @@
    </section>
 
   <!-- skill-contents -->
-   <section class="skill-contents"> 
+   <section class="skill-contents" id="skills"> 
     <div class="text-box">
       <h2 class="title">SKILLS</h2>
       <p class="desc">Click the Box!</p>
@@ -228,7 +229,7 @@
    </section>
 
   <!-- project-contents / 가로 스크롤 영역 -->
-   <section class="project-contents">
+   <section class="project-contents" id="project">
     <div class="project-box">
       <svg class="project-eyes" width="188" height="28" viewBox="0 0 188 28" fill="none" xmlns="http://www.w3.org/2000/svg">
         <mask id="mask0_24_1852" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="94" height="28">
@@ -245,36 +246,80 @@
         <rect x="94" width="94" height="28" rx="14" fill="white"/>
         <circle cx="130.5" cy="9.5" r="16.5" fill="#222225"/></g>
       </svg>
-      <h2 class="title"></h2>
+      <h2 class="title">PROJECT</h2>
     </div>
 
   <!-- 가로 스크롤 -->
-  <ul class="project-wrapper">
-    <li class="project1">
-      <img src="" alt="">
-      <h3 class="project-name"></h3>
-      <p class="project-desc"></p>
-      <a href="" class="more-btn"></a>
-    </li>
-    <li class="project2">
-      <img src="" alt="">
-      <h3 class="project-name"></h3>
-      <p class="project-desc"></p>
-      <a href="" class="more-btn"></a>
-    </li>
-    <li class="project3">
-      <img src="" alt="">
-      <h3 class="project-name"></h3>
-      <p class="project-desc"></p>
-      <a href="" class="more-btn"></a>
-    </li>
-  </ul>
-
+    <ul class="project-wrapper">
+      <li class="project1">
+        <img src="" alt="">
+        <h3 class="project-name">PROJECT1</h3>
+        <p class="project-desc">프로젝트 소개글입니다.</p>
+        <a href="" class="more-btn"><img src="./images/next-icon.svg" alt="next-icon">다음버튼</a>
+      </li>
+      <li class="project2">
+        <img src="" alt="">
+        <h3 class="project-name">PROJECT2</h3>
+        <p class="project-desc">프로젝트 소개글입니다.</p>
+        <a href="" class="more-btn"><img src="./images/next-icon.svg" alt="next-icon">다음버튼</a>
+      </li> 
+      <li class="project3">
+        <img src="" alt="">
+        <h3 class="project-name">PROJECT3</h3>
+        <p class="project-desc">프로젝트 소개글입니다.</p>
+        <a href="" class="more-btn"><img src="./images/next-icon.svg" alt="next-icon">다음버튼</a>
+      </li>
+    </ul>
    </section>
-  <!-- main-contents -->
-   <section class="main-contents">
 
+  <!-- history-contents -->
+   <section class="history-contents">
+    <div class="history-wrapper">
+      <h2 class="title">Work history</h2>
+      <ul class="history-box">
+        <li><strong class="date">2016.08 ~ 2019.07</strong>
+          인테그리스 코리아 Lab Technician</li>
+        <li><strong class="date">2019.08 ~ 2023.08</strong>
+          타투이스트</li>
+        <li><strong class="date">2024.02 ~ 2024.07</strong>
+          UI/UX 웹퍼블리셔 과정 수료</li>
+      </ul>
+    </div>
+
+    <!-- history-images -->
+    <div class="history-img-box">
+      <img src="./images/history-icon.png" alt="history-icon">
+      <img src="./images/history-portfolio-text.png" alt="portfolio">
+    </div>
+  
+    <!-- code -->
+    <p class="code-desc">&lt;div class="history"&gt;</p>
    </section>
+
+   <!-- footer -->
+   <footer class="footer" id="contact">
+     <div class="contact-box">
+      <h3 class="contact-title">CONTACT ME</h3>
+      <p class="email">han_nah2853@naver.com</p>
+      <div class="icon-box">
+        <a href="#" class="github-icon">깃허브로 이동</a>
+        <a href="#" class="email-icon">이메일로 이동</a>
+      </div>
+     </div>
+
+     <ul class="footer-menu">
+      <li><a href="./index.html">HOME </a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#skills">SKILLS</a></li>
+      <li><a href="#project">PROJECT</a></li>
+     </ul>
+
+     <div class="footer-box">
+      <p class="footer-copyright">© 2024 Design & Published By Gonghanna All Rights Reserved.</p>
+      <img src="./images/footer-portfolio-text.png" alt="portfolio">
+     </div>
+
+   </footer>
 </body>
 
 </html>
