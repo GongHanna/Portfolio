@@ -9,7 +9,7 @@
 2. [포트폴리오](https://gonghanna.github.io/Portfolio/, "공한나의 포트폴리오")
 
 ## 240530 ##
-- Coding : index.html 코딩 시작
+- Coding : index.html 코딩 완료 / css 변수 설정 / global.css 작업 / index.css 작업 / header, footer 마우스 이벤트 적용
 
 ## 240529 ##
 - Figma : 포트폴리오 메인 페이지 디자인 작업 완료
