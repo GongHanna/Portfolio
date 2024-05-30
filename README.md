@@ -1,6 +1,6 @@
 # 💻작업 일지💻 #
 
-작업 시 사용된 디자인 툴 : 피그마, Visual Studio Code
+작업 시 사용된 디자인 툴 : Adobe Illustrator, Figma, Visual Studio Code
 
 문서 및 버전 : HTML5, CSS3, JavaScript, jQuery, JSON
 
