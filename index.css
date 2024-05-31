@@ -10,28 +10,37 @@
 .main-contents .main-title {
   font-size: var(--title-main);
   position: absolute;
-  top: 35%; left: 50%;
+  top: 35%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 .main-contents .svg-wrapper {
-  display: flex;
   height: 100vh;
-  align-items: flex-end;
+  position: relative;
 }
 .main-contents .svg-wrapper svg {
   position: absolute;
 }
 .main-contents .svg-wrapper .first-character {
-  left: 0; bottom: 0;
+  left: 0;
+  bottom: 0;
   z-index: 11;
+  width: 42.656vw;
+  height: 27.396vw;
 }
 .main-contents .svg-wrapper .second-character {
-  left: 50%; bottom: 0;
+  left: 50%;
+  bottom: 0;
   transform: translateX(-50%);
   z-index: 1;
+  width: 40.521vw;
+  height: 20.53vw;
 }
 .main-contents .svg-wrapper .last-character {
-  right: 0; bottom: 0;
+  right: 0;
+  bottom: 0;
+  width: 34.531vw;
+  height: 23.9vw;
 }
 
 /***** keyword-contents *****/
@@ -43,7 +52,6 @@
   align-content: center;
 }
 .keyword-contents .keyword-wrapper {
-  background-color: aquamarine;
   place-content: center;
 }
 .keyword-contents .keyword-wrapper li {
@@ -52,6 +60,10 @@
 .keyword-contents .keyword-wrapper li .keyword-title {
   font-size: var(--title-md);
   font-weight: var(--font-extra-bold);
+  position: relative;
+  margin-bottom: 2.344vw;
+  border-bottom: 0.26vw solid var(--primary-green);
+  width: max-content;
 }
 .keyword-contents .keyword-wrapper li .keyword-desc {
   font-size: var(--desc-md);
@@ -61,6 +73,17 @@
   border-radius: var(--primary-border-radius);
   text-align: center;
 }
-.keyword-contents .introduction-wrapper .title {}
-.keyword-contents .introduction-wrapper .title .random-keyword {}
-.keyword-contents .introduction-wrapper .title .my-charactor {}
+.keyword-contents .introduction-wrapper .title {
+}
+.keyword-contents .introduction-wrapper .random-text-box {
+  border: 1px solid #fff;
+  border-radius: var(--primary-border-radius);
+}
+.keyword-contents .introduction-wrapper .random-text-box .random-keyword {
+  font-size: var(--desc-lg);
+}
+.keyword-contents .introduction-wrapper .my-charactor {
+  width: 40.313vw;
+  /* width: 100%; */
+  height: 22.917vw;
+}

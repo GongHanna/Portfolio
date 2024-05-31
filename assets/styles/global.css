@@ -9,13 +9,14 @@ section {
   padding: 0 7.292vw;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100vw;
 }
 .code-desc {
   font-family: var(--coding-fonts);
   position: absolute;
   bottom: 20px; left: 20px;
   opacity: 0.5;
+  z-index: 99;
 }
 .title {
   font-size: var(--title-lg);
