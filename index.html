@@ -67,7 +67,7 @@
 
   <!-- contents -->
   <!-- main-contents -->
-  <section class="main-contents">
+  <section class="main-contents .no-trigger">
     <h2 class="main-title">Web Publisher,<br>Hanna&#39;s Portfolio</h2>
     <!-- svg-wrapper -->
     <div class="svg-wrapper">
@@ -155,18 +155,18 @@
   </section>
 
   <!-- keyword-contents -->
-  <section class="keyword-contents" id="about">
+  <section class="keyword-contents common-trigger" id="about">
     <!-- 키워드 소개 -->
     <ul class="keyword-wrapper">
-      <li>
+      <li class="rolled-over-txt">
         <h3 class="keyword-title"># Passion</h3>
         <p class="keyword-desc">새로운 기술과 트렌드를 배우고자 하는 열정</p>
       </li>
-      <li>
+      <li class="rolled-over-txt">
         <h3 class="keyword-title"># Team Collaboration</h3>
         <p class="keyword-desc">팀 원들과의 원활한 소통과 협업 능력</p>
       </li>
-      <li>
+      <li class="rolled-over-txt">
         <h3 class="keyword-title"># Problem Solving</h3>
         <p class="keyword-desc">문제를 분석하고 해결하는 능력.</p>
       </li>
@@ -221,15 +221,15 @@
   </section>
 
   <!-- skill-contents -->
-  <section class="skill-contents" id="skills">
-    <div class="text-box">
+  <section class="skill-contents common-trigger" id="skills">
+    <div class="text-box rolled-over-txt">
       <h2 class="title">SKILLS</h2>
       <p class="desc">Click the Box!</p>
     </div>
 
     <!-- skill 소개 박스 / 클릭 이벤트 -->
     <ul class="skill-wrapper">
-      <li>
+      <li class="html">
         <h3 class="skill-name">HTML5 / CSS3</h3>
         <div class="skill-text-box">
           <p class="skill-desc">웹 페이지 구조화와 콘텐츠 마크업</p>
@@ -240,7 +240,7 @@
           <p class="skill-desc">미디어 쿼리를 이용한 반응형 웹 제작</p>
         </div>
       </li>
-      <li>
+      <li class="js">
         <h3 class="skill-name">JavaScript & jQeury</h3>
         <div class="skill-text-box">
           <p class="skill-desc">ES6+ 문법 활용</p>
@@ -252,7 +252,7 @@
           <p class="skill-desc">함수형 프로그래밍 개념 이해</p>
         </div>
       </li>
-      <li>
+      <li class="git">
         <h3 class="skill-name">Git / Github / React</h3>
         <div class="skill-text-box">
           <p class="skill-desc">Git을 이용한 버전 관리</p>
@@ -261,7 +261,7 @@
           <p class="skill-desc">css-modules, Styled-Component, Bootstrap</p>
         </div>
       </li>
-      <li>
+      <li class="other">
         <h3 class="skill-name">Others</h3>
         <div class="skill-text-box">
           <p class="skill-desc">사용자 분석을 통한 UI/UX 디자인</p>
@@ -277,7 +277,7 @@
   </section>
 
   <!-- project-contents / 가로 스크롤 영역 -->
-  <section class="project-contents" id="project">
+  <section class="project-contents common-trigger" id="project">
     <div class="project-box">
       <svg class="project-eyes" width="188" height="28" viewBox="0 0 188 28" fill="none"
         xmlns="http://www.w3.org/2000/svg">
@@ -302,44 +302,48 @@
     <!-- 가로 스크롤 -->
     <ul class="project-wrapper">
       <li class="project1">
-        <img src="" alt="">
+        <img src="https://placehold.co/600x400" alt="dummy1">
         <h3 class="project-name">PROJECT1</h3>
         <p class="project-desc">프로젝트 소개글입니다.</p>
-        <a href="" class="more-btn"><img src="./images/next-icon.svg" alt="next-icon">다음버튼</a>
+        <a href="" class="more-btn">다음버튼</a>
       </li>
       <li class="project2">
-        <img src="" alt="">
+        <img src="https://placehold.co/600x400" alt="dummy2">
         <h3 class="project-name">PROJECT2</h3>
         <p class="project-desc">프로젝트 소개글입니다.</p>
-        <a href="" class="more-btn"><img src="./images/next-icon.svg" alt="next-icon">다음버튼</a>
+        <a href="" class="more-btn">다음버튼</a>
       </li>
       <li class="project3">
-        <img src="" alt="">
+        <img src="https://placehold.co/600x400" alt="dummy3">
         <h3 class="project-name">PROJECT3</h3>
         <p class="project-desc">프로젝트 소개글입니다.</p>
-        <a href="" class="more-btn"><img src="./images/next-icon.svg" alt="next-icon">다음버튼</a>
+        <a href="" class="more-btn">다음버튼</a>
       </li>
     </ul>
   </section>
 
   <!-- history-contents -->
-  <section class="history-contents">
+  <section class="history-contents .no-trigger">
     <div class="history-wrapper">
       <h2 class="title">Work history</h2>
       <ul class="history-box">
-        <li><strong class="date">2016.08 ~ 2019.07</strong>
-          인테그리스 코리아 Lab Technician</li>
-        <li><strong class="date">2019.08 ~ 2023.08</strong>
-          타투이스트</li>
-        <li><strong class="date">2024.02 ~ 2024.07</strong>
-          UI/UX 웹퍼블리셔 과정 수료</li>
+        <li class="rolled-over-txt"><strong class="date">2016.08 ~ 2019.07</strong>
+          <span>인테그리스 코리아 Lab Technician</span></li>
+        <li class="rolled-over-txt"><strong class="date">2019.08 ~ 2023.08</strong>
+          <span>타투이스트</span></li>
+        <li class="rolled-over-txt"><strong class="date">2024.02 ~ 2024.07</strong>
+          <span>UI/UX 웹퍼블리셔 과정 수료</span></li>
       </ul>
     </div>
 
     <!-- history-images -->
     <div class="history-img-box">
-      <img src="./images/history-icon.png" alt="history-icon">
-      <img src="./images/history-portfolio-text.png" alt="portfolio">
+      <svg class="history-icon" width="155" height="241" viewBox="0 0 155 241" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M136.345 21.2566C155.773 24.3319 176.659 12.573 193.933 21.8361C211.96 31.5023 217.865 52.9313 228.072 70.4428C241.488 93.4628 264.87 113.681 262.881 140.137C260.766 168.262 240.146 192.196 217.606 209.649C194.452 227.578 164.224 247.527 136.345 238.117C107.795 228.481 108.972 186.64 87.5397 165.749C71.3915 150.008 43.3384 151.549 29.409 133.879C11.9733 111.761 -5.39148 83.8272 1.5768 56.6991C8.58597 29.4117 35.8286 8.46439 63.4925 1.18913C88.4663 -5.3787 110.821 17.2166 136.345 21.2566Z" fill="#D1263D"/>
+        <circle cx="126.5" cy="95.5" r="68.5" fill="white"/>
+        <circle cx="119" cy="76" r="44" fill="#222225"/>
+        </svg>
+      <img class="history-text" src="./images/history-portfolio-text.png" alt="portfolio">
     </div>
 
     <!-- code -->
