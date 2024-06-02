@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>portfolio</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./images/favicon/site.webmanifest">
+  <!-- og -->
+  <meta property="og:title" content="HANNA'S PORTFOLIO">
+  <meta property="og:url" content="https://gonghanna.github.io/Portfolio/">
+  <meta property="og:image" content="https://gonghanna.github.io/Portfolio/images/og-img.png">
+  <meta property="og:description" content="안녕하세요, 공한나의 포트폴리오 입니다.">
+  <meta property="og:type" content="website">
+  <!-- reset css -->
+  <link rel="stylesheet" href="./assets/styles/reset.css">
+  <!-- 공통된 css style -->
+  <link rel="stylesheet" href="./assets/styles/variable.css">
+  <link rel="stylesheet" href="./assets/styles/global.css">
+  <link rel="stylesheet" href="./assets/styles/animation.css">
+  <link rel="stylesheet" href="./assets/styles/swiper-bundle.min.css">
+  <!-- page 별 css style -->
+  <link rel="stylesheet" href="./index.css">
+  <!-- jQuery -->
+  <script src="./assets/js/jquery-3.7.1.min.js"></script>
+  <!-- pulgIn -->
+  <script src="./assets/js/gsap.min.js"></script>
+  <script src="./assets/js/ScrollTrigger.min.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <!-- page 별 사용되는 js -->
+  <script defer src="./assets/js/global.js"></script>
+  <script defer src="./index.js"></script>
+  <style>
+    /***** project-contents *****/
+    .project-contents {
+      background-color: var(--primary-black);
+      color: #fff;
+      padding: 0;
+    }
+
+    .project-contents .project-box {
+      text-align: center;
+      padding: 1.719vw 0 3.073vw;
+    }
+
+    .project-contents .sticky-box {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      width: 100%;
+    }
+
+    /* 가로스크롤 영역 */
+    .project-contents .sticky-box .project-wrapper {
+      position: absolute;
+      top: -19%;
+      left: 0;
+      padding-top: 9.948vw;
+      display: flex;
+      width: 300%;
+      height: 100vh;
+    }
+
+    .project-contents .sticky-box .project-wrapper .project1 {
+      background: url(./images/project1-bg-icon.png) no-repeat -10% 5%;
+    }
+
+    .project-contents .sticky-box .project-wrapper .project2 {
+      background: url(./images/project2-bg-icon.png) no-repeat 50%, var(--primary-black);
+      top: -22.5%;
+      left: 0;
+      height: 100vh;
+      padding-top: 9.948vw;
+    }
+
+    .project-contents .sticky-box .project-wrapper .project3 {
+      background: url(./images/project3-bg-icon.png) no-repeat 100% 10%, var(--primary-black);
+      top: -22.5%;
+      left: 0;
+      height: 100vh;
+      padding-top: 9.948vw;
+    }
+
+    .project-contents .sticky-box .project-wrapper li {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .project-contents .sticky-box .project-wrapper li img {
+      height: 75%;
+      border-radius: var(--primary-border-radius);
+      align-self: center;
+    }
+
+    .project-contents .sticky-box .project-wrapper li .project-name {
+      width: 50%;
+      align-self: center;
+      font-weight: var(--font-bold);
+      font-size: var(--title-md);
+      padding: 1.719vw 0;
+    }
+
+    .project-contents .sticky-box .project-wrapper li .project-desc {
+      font-size: var(--desc-sm);
+      width: 50%;
+      align-self: center;
+    }
+
+    .project-contents .sticky-box .project-wrapper li .more-btn {
+      display: block;
+      width: 66px;
+      height: 66px;
+      border-radius: 50%;
+      background: url(./images/next-icon.svg) no-repeat 50%, rgba(255, 255, 255, 0.7);
+      text-indent: -9999px;
+      position: absolute;
+      bottom: 10%;
+      right: 25%;
+    }
+
+    .project-contents .sticky-box .project-wrapper li .more-btn:hover {
+      background: url(./images/next-icon.svg) no-repeat 50%, rgba(255, 255, 255, 1);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header">
+    <h1 class="logo">
+      <a href="./index.html">로고</a>
+    </h1>
+
+    <!-- side-menu -->
+    <div class="side-menu-wrapper">
+      <!-- side-menu-button -->
+      <div class="side-menu-btn">
+        <span class="bar1">버튼모양1</span>
+        <span class="bar2">버튼모양2</span>
+        <span class="bar3">버튼모양3</span>
+      </div>
+      <!-- side-menu-list / button 클릭 시 내용 보임 -->
+      <ul class="side-menu">
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#project">PROJECT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+      <!-- code -->
+      <p class="code-desc">&lt;div class="menu"&gt;</p>
+    </div>
+  </header>
+  <div class="svg-wrapper">
+    <svg class="first-character" viewBox="0 0 819 526" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <mask id="mask0_26_986" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="819" height="526">
+        <rect width="819" height="526" fill="white" />
+      </mask>
+      <g mask="url(#mask0_26_986)">
+        <path
+          d="M808 457C808 707.185 624.416 577.999 355 629.259C92.1408 564.289 -98 707.185 -98 457C-98 206.815 104.815 4 355 4C605.185 4 808 206.815 808 457Z"
+          fill="#D1263D" />
+        <circle cx="247.956" cy="138.954" r="61.0433" fill="white" />
+        <circle cx="460.851" cy="138.954" r="61.0433" fill="white" />
+        <circle class="eye" cx="238.371" cy="113.225" r="35.3143" fill="#222225" />
+        <circle class="eye" cx="453.284" cy="113.225" r="35.3143" fill="#222225" />
+        <path
+          d="M294.014 288.302C293.358 290.848 289.977 291.379 288.572 289.156L269.968 259.699C268.693 257.681 270.171 255.055 272.557 255.097L298.631 255.553C300.57 255.587 301.968 257.423 301.484 259.301L294.014 288.302Z"
+          fill="white" />
+        <path
+          d="M232.16 243.88C230.332 243.251 228.34 244.223 227.711 246.051C227.083 247.879 228.054 249.87 229.882 250.499L232.16 243.88ZM229.882 250.499C248.646 256.956 277.586 262.952 303.37 259.722C316.293 258.104 328.659 254.138 338.537 246.519C348.491 238.841 355.68 227.631 358.446 212.038L351.554 210.815C349.075 224.786 342.763 234.418 334.262 240.976C325.684 247.592 314.641 251.256 302.5 252.777C278.156 255.826 250.351 250.139 232.16 243.88L229.882 250.499Z"
+          fill="white" />
+        <path d="M478.979 247.19C442.024 259.905 365.491 270.555 355 211.426" stroke="white" stroke-width="7"
+          stroke-linecap="round" />
+        <path
+          d="M357.002 214.079C355.847 216.079 352.961 216.079 351.806 214.079L342.032 197.151C340.878 195.151 342.321 192.651 344.63 192.651L364.177 192.651C366.487 192.651 367.93 195.151 366.776 197.151L357.002 214.079Z"
+          fill="white" />
+      </g>
+    </svg>
+    <svg class="second-character" viewBox="0 0 778 394" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <mask id="mask0_26_1001" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="778" height="394">
+        <rect width="778" height="394" fill="white" />
+      </mask>
+      <g mask="url(#mask0_26_1001)">
+        <path
+          d="M769 384C769 593.868 615 485.5 389 528.5C168.5 474 9 593.868 9 384C9 174.132 179.132 4 389 4C598.868 4 769 174.132 769 384Z"
+          fill="#222225" />
+        <circle cx="299.206" cy="117.206" r="51.2063" fill="white" />
+        <circle cx="477.794" cy="117.206" r="51.2063" fill="white" />
+        <circle cx="291.166" cy="95.6235" r="29.6235" fill="#222225" />
+        <circle cx="471.446" cy="95.6235" r="29.6235" fill="#222225" />
+        <path
+          d="M367 207L379.095 199.092C379.688 198.704 380.167 198.166 380.484 197.533L385.241 188.017C386.653 185.194 390.625 185.042 392.249 187.748L401.239 202.731C401.73 203.55 402.498 204.166 403.404 204.468L411 207V229C411 241.15 401.15 251 389 251C376.85 251 367 241.15 367 229V207Z"
+          fill="#D1263D" />
+        <path
+          d="M286.139 204.69C284.311 204.062 282.319 205.033 281.69 206.861C281.062 208.689 282.033 210.681 283.861 211.31L286.139 204.69ZM283.861 211.31C299.648 216.741 324.015 221.796 345.76 219.073C356.663 217.707 367.144 214.356 375.535 207.884C384.001 201.353 390.102 191.823 392.446 178.611L385.554 177.389C383.498 188.977 378.274 196.931 371.259 202.341C364.169 207.81 355.012 210.859 344.89 212.127C324.585 214.67 301.352 209.925 286.139 204.69L283.861 211.31Z"
+          fill="white" />
+        <path d="M493 208C462 218.667 397.8 227.6 389 178" stroke="white" stroke-width="7" stroke-linecap="round" />
+        <path
+          d="M391.098 179.5C389.943 181.5 387.057 181.5 385.902 179.5L378.541 166.75C377.386 164.75 378.829 162.25 381.139 162.25L395.861 162.25C398.171 162.25 399.614 164.75 398.459 166.75L391.098 179.5Z"
+          fill="white" />
+      </g>
+    </svg>
+    <svg class="last-character" viewBox="0 0 663 462" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <mask id="mask0_26_1016" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="663" height="462">
+        <rect width="663" height="462" fill="white" />
+      </mask>
+      <g mask="url(#mask0_26_1016)">
+        <path
+          d="M763 390C763 599.868 609 491.5 383 534.5C162.5 480 3 599.868 3 390C3 180.132 173.132 10 383 10C592.868 10 763 180.132 763 390Z"
+          fill="#D1263D" />
+        <circle cx="293.206" cy="123.206" r="51.2063" fill="white" />
+        <circle cx="471.794" cy="123.206" r="51.2063" fill="white" />
+        <circle cx="285.166" cy="101.623" r="29.6235" fill="#222225" />
+        <circle cx="465.446" cy="101.623" r="29.6235" fill="#222225" />
+        <path
+          d="M280.139 210.69C278.311 210.062 276.319 211.033 275.69 212.861C275.062 214.689 276.033 216.681 277.861 217.31L280.139 210.69ZM277.861 217.31C293.648 222.741 318.015 227.796 339.76 225.073C350.663 223.707 361.144 220.356 369.535 213.884C378.001 207.353 384.102 197.823 386.446 184.611L379.554 183.389C377.498 194.977 372.274 202.931 365.259 208.341C358.169 213.81 349.012 216.859 338.89 218.127C318.585 220.67 295.352 215.925 280.139 210.69L277.861 217.31Z"
+          fill="white" />
+        <path d="M487 214C456 224.667 391.8 233.6 383 184" stroke="white" stroke-width="7" stroke-linecap="round" />
+        <path
+          d="M385.098 185.5C383.943 187.5 381.057 187.5 379.902 185.5L372.541 172.75C371.386 170.75 372.829 168.25 375.139 168.25L389.861 168.25C392.171 168.25 393.614 170.75 392.459 172.75L385.098 185.5Z"
+          fill="white" />
+        <path
+          d="M435.914 252.404C436.57 254.951 439.951 255.481 441.355 253.258L459.96 223.801C461.235 221.783 459.757 219.158 457.371 219.199L431.297 219.655C429.358 219.689 427.96 221.525 428.444 223.403L435.914 252.404Z"
+          fill="white" />
+      </g>
+    </svg>
+  </div>
+
+
+  <!-- footer -->
+  <footer class="footer" id="contact">
+    <div class="contact-box">
+      <h3 class="contact-title">CONTACT ME</h3>
+      <p class="email">han_nah2853@naver.com</p>
+      <div class="icon-box">
+        <a href="#" class="github-icon">깃허브로 이동</a>
+        <a href="#" class="email-icon">이메일로 이동</a>
+      </div>
+    </div>
+
+    <ul class="footer-menu">
+      <li><a href="./index.html">HOME </a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#skills">SKILLS</a></li>
+      <li><a href="#project">PROJECT</a></li>
+    </ul>
+
+    <div class="footer-box">
+      <p class="footer-copyright">© 2024 Design & Published By Gonghanna All Rights Reserved.</p>
+      <img src="./images/footer-portfolio-text.png" alt="portfolio">
+    </div>
+
+  </footer>
+  <script>
+    document.addEventListener("mousemove", function (event) {
+  const eyes = document.querySelectorAll(".eye");
+  
+  eyes.forEach(function (eye) {
+    const eyeOffset = eye.getBoundingClientRect();
+    const centerX = eyeOffset.left + eye.offsetWidth / 2;
+    const centerY = eyeOffset.top + eye.offsetHeight / 2;
+    
+    const angle = Math.atan2(event.pageY - centerY, event.pageX - centerX);
+    const rotateDeg = angle * (180 / Math.PI) + 90;
+
+    eye.style.transform = `rotate(${rotateDeg}deg)`;
+  });
+});
+  </script>
+</body>
+
+</html>

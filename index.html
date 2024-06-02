@@ -71,7 +71,7 @@
     <h2 class="main-title">Web Publisher,<br>Hanna&#39;s Portfolio</h2>
     <!-- svg-wrapper -->
     <div class="svg-wrapper">
-      <svg class="first-character" width="819" height="526" viewBox="0 0 819 526" fill="none"
+      <svg class="first-character" viewBox="0 0 819 526" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <mask id="mask0_26_986" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="819" height="526">
           <rect width="819" height="526" fill="white" />
@@ -97,7 +97,7 @@
             fill="white" />
         </g>
       </svg>
-      <svg class="second-character" width="778" height="394" viewBox="0 0 778 394" fill="none"
+      <svg class="second-character" viewBox="0 0 778 394" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <mask id="mask0_26_1001" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="778"
           height="394">
@@ -123,7 +123,7 @@
             fill="white" />
         </g>
       </svg>
-      <svg class="last-character" width="663" height="462" viewBox="0 0 663 462" fill="none"
+      <svg class="last-character" viewBox="0 0 663 462" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <mask id="mask0_26_1016" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="663"
           height="462">
@@ -177,12 +177,12 @@
       <h2 class="title">WHO I AM ?</h2>
       <!-- 랜덤으로 텍스트가 계속 바뀌는 이벤트 적용 -->
       <div class="random-text-box">
-        <p class="random-keyword"># 지속적인 학습자</p>
+        <p class="random-keyword event"># 지속적인 학습자</p>
         <p class="random-keyword"># 문제를 창의적으로 해결하는</p>
         <p class="random-keyword"># 작은 부분까지 신경 쓰는 꼼꼼한</p>
         <p class="random-keyword"># 공한나 입니다.</p>
       </div>
-      <svg class="my-charactor" width="744" height="440" viewBox="0 0 744 440" fill="none"
+      <svg class="my-charactor" viewBox="0 0 744 440" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <mask id="mask0_26_963" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="744" height="440">
           <rect width="744" height="440" rx="30" fill="#D1263D" />
@@ -222,7 +222,7 @@
 
   <!-- skill-contents -->
   <section class="skill-contents common-trigger" id="skills">
-    <div class="text-box rolled-over-txt">
+    <div class="text-box">
       <h2 class="title">SKILLS</h2>
       <p class="desc">Click the Box!</p>
     </div>
@@ -299,27 +299,30 @@
       <h2 class="title">PROJECT</h2>
     </div>
 
-    <!-- 가로 스크롤 -->
-    <ul class="project-wrapper">
-      <li class="project1">
-        <img src="https://placehold.co/600x400" alt="dummy1">
-        <h3 class="project-name">PROJECT1</h3>
-        <p class="project-desc">프로젝트 소개글입니다.</p>
-        <a href="" class="more-btn">다음버튼</a>
-      </li>
-      <li class="project2">
-        <img src="https://placehold.co/600x400" alt="dummy2">
-        <h3 class="project-name">PROJECT2</h3>
-        <p class="project-desc">프로젝트 소개글입니다.</p>
-        <a href="" class="more-btn">다음버튼</a>
-      </li>
-      <li class="project3">
-        <img src="https://placehold.co/600x400" alt="dummy3">
-        <h3 class="project-name">PROJECT3</h3>
-        <p class="project-desc">프로젝트 소개글입니다.</p>
-        <a href="" class="more-btn">다음버튼</a>
-      </li>
-    </ul>
+    <!-- pos : sticky -->
+    <div class="sticky-box">
+      <!-- 가로 스크롤 -->
+      <ul class="project-wrapper">
+        <li class="project1">
+          <img src="https://placehold.co/600x400" alt="dummy1">
+          <h3 class="project-name">PROJECT1</h3>
+          <p class="project-desc">프로젝트 소개글입니다.</p>
+          <a href="" class="more-btn">다음버튼</a>
+        </li>
+        <li class="project2">
+          <img src="https://placehold.co/600x400" alt="dummy2">
+          <h3 class="project-name">PROJECT2</h3>
+          <p class="project-desc">프로젝트 소개글입니다.</p>
+          <a href="" class="more-btn">다음버튼</a>
+        </li>
+        <li class="project3">
+          <img src="https://placehold.co/600x400" alt="dummy3">
+          <h3 class="project-name">PROJECT3</h3>
+          <p class="project-desc">프로젝트 소개글입니다.</p>
+          <a href="" class="more-btn">다음버튼</a>
+        </li>
+      </ul>
+    </div>
   </section>
 
   <!-- history-contents -->
@@ -328,21 +331,27 @@
       <h2 class="title">Work history</h2>
       <ul class="history-box">
         <li class="rolled-over-txt"><strong class="date">2016.08 ~ 2019.07</strong>
-          <span>인테그리스 코리아 Lab Technician</span></li>
+          <span>인테그리스 코리아 Lab Technician</span>
+        </li>
         <li class="rolled-over-txt"><strong class="date">2019.08 ~ 2023.08</strong>
-          <span>타투이스트</span></li>
+          <span>타투이스트</span>
+        </li>
         <li class="rolled-over-txt"><strong class="date">2024.02 ~ 2024.07</strong>
-          <span>UI/UX 웹퍼블리셔 과정 수료</span></li>
+          <span>UI/UX 웹퍼블리셔 과정 수료</span>
+        </li>
       </ul>
     </div>
 
     <!-- history-images -->
     <div class="history-img-box">
-      <svg class="history-icon" width="155" height="241" viewBox="0 0 155 241" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M136.345 21.2566C155.773 24.3319 176.659 12.573 193.933 21.8361C211.96 31.5023 217.865 52.9313 228.072 70.4428C241.488 93.4628 264.87 113.681 262.881 140.137C260.766 168.262 240.146 192.196 217.606 209.649C194.452 227.578 164.224 247.527 136.345 238.117C107.795 228.481 108.972 186.64 87.5397 165.749C71.3915 150.008 43.3384 151.549 29.409 133.879C11.9733 111.761 -5.39148 83.8272 1.5768 56.6991C8.58597 29.4117 35.8286 8.46439 63.4925 1.18913C88.4663 -5.3787 110.821 17.2166 136.345 21.2566Z" fill="#D1263D"/>
-        <circle cx="126.5" cy="95.5" r="68.5" fill="white"/>
-        <circle cx="119" cy="76" r="44" fill="#222225"/>
-        </svg>
+      <svg class="history-icon" width="155" height="241" viewBox="0 0 155 241" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M136.345 21.2566C155.773 24.3319 176.659 12.573 193.933 21.8361C211.96 31.5023 217.865 52.9313 228.072 70.4428C241.488 93.4628 264.87 113.681 262.881 140.137C260.766 168.262 240.146 192.196 217.606 209.649C194.452 227.578 164.224 247.527 136.345 238.117C107.795 228.481 108.972 186.64 87.5397 165.749C71.3915 150.008 43.3384 151.549 29.409 133.879C11.9733 111.761 -5.39148 83.8272 1.5768 56.6991C8.58597 29.4117 35.8286 8.46439 63.4925 1.18913C88.4663 -5.3787 110.821 17.2166 136.345 21.2566Z"
+          fill="#D1263D" />
+        <circle cx="126.5" cy="95.5" r="68.5" fill="white" />
+        <circle cx="119" cy="76" r="44" fill="#222225" />
+      </svg>
       <img class="history-text" src="./images/history-portfolio-text.png" alt="portfolio">
     </div>
 

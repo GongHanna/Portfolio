@@ -11,12 +11,57 @@ $('.header .logo').on('click', (e) => {
   });
 });
 
+// 마우스 따라 움직이는 눈
+// $(document).mousemove(function (event) {
+//   $('.eye').each(function () {
+//     const eye = $(this);
+//     const centerX = eye.offset().left + eye.width() / 2;
+//     const centerY = eye.offset().top + eye.height() / 2;
+
+//     const angle = Math.atan2(event.pageY - centerY, event.pageX - centerX);
+//     const rotateDeg = angle * (180 / Math.PI) + 90;
+
+//     eye.css('transform', `rotate(${rotateDeg}deg)`);
+//   });
+// });
+
+// 랜덤 텍스트 이벤트
+$(function () {
+  function movTxt(num) {
+    const nextIdx = (num + 1) % $('.keyword-contents .introduction-wrapper .random-text-box .random-keyword').length;
+
+    $('.keyword-contents .introduction-wrapper .random-text-box .random-keyword').removeClass('event').eq(nextIdx).addClass('event');
+
+    setTimeout(() => movTxt(nextIdx), 2000);
+  };
+
+  movTxt(0);
+});
+
+// 가로 스크롤
+gsap.registerPlugin(ScrollTrigger);
+
+  const horizontalScroll = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.project-contents',
+      pin: true,
+      scrub: true,
+      start: 'top top',
+      end: () => `+=${document.querySelector('.project-wrapper').offsetWidth - window.innerWidth}`
+    }
+  });
+
+  horizontalScroll.to('.project-wrapper', {
+    x: () => -(document.querySelector('.project-wrapper').scrollWidth - window.innerWidth),
+    ease: 'none'
+  });
+
 // skill 클릭 이벤트
 $('.skill-contents .skill-wrapper li').on('click', (e) => {
   $(e.currentTarget).toggleClass('show').siblings().removeClass('show');
 });
 
-// 스크롤트리거
+// 헤더 변경 스크롤트리거
 gsap.registerPlugin(ScrollTrigger);
 const triggers = document.querySelectorAll('.common-trigger');
 
@@ -37,6 +82,10 @@ triggers.forEach(trigger => {
           color: 'var(--primary-black)',
           duration: 0.4
         });
+        gsap.to(".logo", {
+          filter: 'invert(100%)',
+          duration: 0.4
+        });
       },
       onLeave: () => {
         gsap.to(".side-menu-btn", {
@@ -48,7 +97,11 @@ triggers.forEach(trigger => {
           color: '#fff',
           duration: 0.4
         });
-      },   
+        gsap.to(".logo", {
+          filter: 'invert(0)',
+          duration: 0.4
+        });
+      },
       onEnterBack: () => {
         gsap.to(".side-menu-btn", {
           filter: 'invert(100%)',
@@ -57,6 +110,10 @@ triggers.forEach(trigger => {
         gsap.to(".side-menu", {
           backgroundColor: '#fff',
           color: 'var(--primary-black)',
+          duration: 0.4
+        });
+        gsap.to(".logo", {
+          filter: 'invert(100%)',
           duration: 0.4
         });
       },
@@ -70,6 +127,10 @@ triggers.forEach(trigger => {
           color: '#fff',
           duration: 0.4
         });
+        gsap.to(".logo", {
+          filter: 'invert(0)',
+          duration: 0.4
+        });
       }
     });
   }
@@ -77,25 +138,25 @@ triggers.forEach(trigger => {
 
 const headerInvert = {
   trigger: '.common-trigger',
-  start: '50% 100%',
-  end: '100% 0',
+  start: 'top top',
+  end: 'bottom top',
   toggleActions: 'play reverse play reverse',
-  onEnter: () => 
+  onEnter: () =>
     gsap.to(".global-menu-button", {
       filter: 'invert(100%)',
       duration: 0.4
     }),
-  onLeave: () => 
+  onLeave: () =>
     gsap.to(".global-menu-button", {
       filter: 'invert(0)',
       duration: 0.4
     }),
-  onEnterBack: () => 
+  onEnterBack: () =>
     gsap.to(".global-menu-button", {
       filter: 'invert(100%)',
       duration: 0.4
     }),
-  onLeaveBack: () => 
+  onLeaveBack: () =>
     gsap.to(".global-menu-button", {
       filter: 'invert(0)',
       duration: 0.4

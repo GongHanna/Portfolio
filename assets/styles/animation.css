@@ -1,1 +1,12 @@
 @charset "utf-8";
+
+/* main-page-charater moving */
+@keyframes mov-character {
+  100% {
+    transform: translate(-50%, -5%);
+  } 50% {
+    transform: translate(-50%, 5%);
+  } 0% {
+    transform: translate(-50%, 0);
+  }
+}
