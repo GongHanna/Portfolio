@@ -11,6 +11,20 @@
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 9;
+  animation: mov-title 0.5s linear;
+}
+.main-contents .main-title::after {
+  content: "";
+  width: 49.74vw;
+  height: 1.042vw;
+  position: absolute;
+  background-color: var(--primary-green);
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.7;
+  z-index: -9;
 }
 .main-contents .svg-wrapper {
   height: 100vh;
@@ -19,15 +33,11 @@
 .main-contents .svg-wrapper svg {
   position: absolute;
 }
-.main-contents .svg-wrapper svg:hover {
-  /* animation: mov-character infinite .3s ease-in-out; */
-}
 .main-contents .svg-wrapper .first-character {
   left: 0;
   bottom: 0;
   z-index: 11;
   width: 42.656vw;
-  height: 27.396vw;
 }
 .main-contents .svg-wrapper .second-character {
   left: 50%;
@@ -35,13 +45,11 @@
   transform: translateX(-50%);
   z-index: 1;
   width: 40.521vw;
-  height: 20.3vw;
 }
 .main-contents .svg-wrapper .last-character {
   right: 0;
   bottom: 0;
   width: 34.3vw;
-  height: 23.9vw;
 }
 
 /***** keyword-contents *****/
@@ -84,9 +92,9 @@
   border: 1px solid #fff;
   border-radius: var(--primary-border-radius);
   font-size: var(--desc-lg);
-  height: 3.5rem;
-  width: 80%;
-  margin: 1.156vw auto 0;
+  height: 4.5rem;
+  width: 75%;
+  margin: 2.156vw auto 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,25 +102,29 @@
 }
 .keyword-contents .introduction-wrapper .random-text-box .random-keyword {
   position: absolute;
-  left: 50%; top: 50%;
+  left: 50%;
+  top: 50%;
   transform: translate(-50%, 100%);
-  transition: .5s;
+  transition: 0.5s;
   width: 100%;
   opacity: 0;
 }
 .keyword-contents .introduction-wrapper .random-text-box .random-keyword.event {
   opacity: 1;
-  left: 50%; top: 50%;
+  left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
 }
 .keyword-contents .introduction-wrapper .my-charactor {
   width: 105%;
   position: absolute;
-  bottom: -10%; left: 50%;
+  bottom: -10%;
+  left: 50%;
   transform: translateX(-50%);
 }
 .keyword-contents .introduction-wrapper .my-charactor:hover {
-  animation: mov-character infinite .6s linear;
+  /* animation: bounce 0.6s infinite alternate
+    cubic-bezier(0.95, 0.05, 0.795, 0.035); */
 }
 
 /***** skill-contents *****/
@@ -121,48 +133,68 @@
   color: #fff;
   display: grid;
   grid-template-columns: 1fr 3fr;
+  grid-auto-rows: 1fr;
   justify-content: center;
   align-content: center;
   gap: 5.938vw;
 }
 .skill-contents .text-box {
   text-align: center;
-  padding-top: 5.938vw;
+  padding-top: 15.885vw;
 }
 .skill-contents .text-box .desc {
   font-size: var(--desc-md);
   padding-top: 1.563vw;
+  animation: waviy 0.8s alternate infinite
+    cubic-bezier(0.95, 0.05, 0.795, 0.035);
 }
 /* skill 소개 박스 */
 .skill-contents .skill-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 280px 280px;
-  gap: 2.969vw;
+  position: relative;
+  height: 60%;
+  margin: auto 0;
 }
 .skill-contents .skill-wrapper li {
   border-radius: var(--primary-border-radius);
   cursor: pointer;
-  /* transition: .3s; */
+  position: absolute;
+  width: 28.583vw;
+}
+.skill-contents .skill-wrapper li img {
+  margin: 0 auto;
+  display: grid;
+  padding: 3.854vw 0 2vw;
+  width: 25%;
+}
+.skill-contents .skill-wrapper li:nth-child(n + 3) img {
+  width: 37%;
 }
 .skill-contents .skill-wrapper .html {
-  background: url(./images/skill-01.png) no-repeat 50% 30%, var(--primary-black);
+  background-color: var(--primary-black);
+  top: 0;
+  left: 0;
 }
 .skill-contents .skill-wrapper .js {
-  background: url(./images/skill-02.png) no-repeat 50% 30%, #fff;
+  background-color: #fff;
   color: var(--primary-black);
+  top: 0;
+  right: 0;
 }
 .skill-contents .skill-wrapper .git {
-  background: url(./images/skill-03.png) no-repeat 50% 30%, #fff;
+  background-color: #fff;
   color: var(--primary-black);
+  bottom: 0;
+  left: 0;
 }
 .skill-contents .skill-wrapper .other {
-  background: url(./images/skill-04.png) no-repeat 50% 30%, var(--primary-black);
+  background-color: var(--primary-black);
+  bottom: 0;
+  right: 0;
 }
 .skill-contents .skill-wrapper li .skill-name {
   text-align: center;
   font-size: var(--desc-lg);
-  padding-top: 8.854vw;
+  padding-bottom: 2vw;
 }
 .skill-contents .skill-wrapper .git .skill-text-box p:nth-child(3) {
   padding-bottom: 2.083vw;
@@ -173,21 +205,28 @@
 }
 .skill-contents .skill-wrapper li .skill-text-box {
   display: none;
-  padding: 3.844vw 2.344vw;
+  padding: 0 2.344vw 1vw;
   line-height: 2.5;
   font-size: var(--desc-sm);
 }
-/* 클릭 이벤트 */
-.skill-contents .skill-wrapper li.show {
-  height: 617px;
-  z-index: 99;
-  background-position: 50% 12%;
+.skill-contents .skill-wrapper .html .skill-text-box {
+  padding: 1.5vw 2.344vw;
 }
-.skill-contents .skill-wrapper li.show .skill-text-box {
-  display: block;
+.skill-contents .skill-wrapper .git .skill-text-box {
+  padding: 2.5vw 2.344vw;
+}
+.skill-contents .skill-wrapper .other .skill-text-box {
+  padding: 1.5vw 2.344vw;
 }
 .skill-contents .skill-wrapper li .skill-text-box .skill-desc::before {
   content: "· ";
+}
+/* 클릭 이벤트 */
+.skill-contents .skill-wrapper li.show {
+  z-index: 99;
+}
+.skill-contents .skill-wrapper li.show .skill-text-box {
+  display: block;
 }
 
 /***** project-contents *****/
@@ -199,6 +238,8 @@
 .project-contents .project-box {
   text-align: center;
   padding: 1.719vw 0 3.073vw;
+  position: relative;
+  z-index: 999;
 }
 .project-contents .sticky-box {
   position: sticky;
@@ -209,7 +250,8 @@
 /* 가로스크롤 영역 */
 .project-contents .sticky-box .project-wrapper {
   position: absolute;
-  top: -19%; left: 0;
+  top: -20%;
+  left: 0;
   padding-top: 9.948vw;
   display: flex;
   width: 300%;
@@ -219,14 +261,18 @@
   background: url(./images/project1-bg-icon.png) no-repeat -10% 5%;
 }
 .project-contents .sticky-box .project-wrapper .project2 {
-  background: url(./images/project2-bg-icon.png) no-repeat 50%, var(--primary-black);
-  top: -22.5%; left: 0;
+  background: url(./images/project2-bg-icon.png) no-repeat 50%,
+    var(--primary-black);
+  top: -25.9%;
+  left: 0;
   height: 100vh;
   padding-top: 9.948vw;
 }
 .project-contents .sticky-box .project-wrapper .project3 {
-  background: url(./images/project3-bg-icon.png) no-repeat 100% 10%, var(--primary-black);
-  top: -22.5%; left: 0;
+  background: url(./images/project3-bg-icon.png) no-repeat 100% 10%,
+    var(--primary-black);
+  top: -25.9%;
+  left: 0;
   height: 100vh;
   padding-top: 9.948vw;
 }
@@ -238,7 +284,6 @@
   position: relative;
 }
 .project-contents .sticky-box .project-wrapper li img {
-  height: 75%;
   border-radius: var(--primary-border-radius);
   align-self: center;
 }
@@ -247,7 +292,7 @@
   align-self: center;
   font-weight: var(--font-bold);
   font-size: var(--title-md);
-  padding: 1.719vw 0;
+  padding: 1vw 0 0.5vw;
 }
 .project-contents .sticky-box .project-wrapper li .project-desc {
   font-size: var(--desc-sm);
@@ -256,12 +301,19 @@
 }
 .project-contents .sticky-box .project-wrapper li .more-btn {
   display: block;
-  width: 66px; height: 66px;
+  width: 66px;
+  height: 66px;
   border-radius: 50%;
-  background: url(./images/next-icon.svg) no-repeat 50%, rgba(255, 255, 255, 0.7);
+  background: url(./images/next-icon.svg) no-repeat 50%,
+    rgba(255, 255, 255, 0.7);
   text-indent: -9999px;
   position: absolute;
-  bottom: 10%; right: 25%;
+  bottom: 10%;
+  right: 25%;
+  transition: 0.4s;
+}
+.project-contents .sticky-box .project-wrapper li:not(:first-child) .more-btn {
+  bottom: 8%;
 }
 .project-contents .sticky-box .project-wrapper li .more-btn:hover {
   background: url(./images/next-icon.svg) no-repeat 50%, rgba(255, 255, 255, 1);
@@ -269,13 +321,14 @@
 
 /***** history-contents *****/
 .history-contents {
-  background: url(./images/history-bg.png) no-repeat 50%;
+  background: url(./images/history-bg.png) no-repeat 30% / cover;
+  z-index: -9;
 }
 .history-contents .history-wrapper {
   padding-top: 15.833vw;
 }
 .history-contents .history-wrapper .history-box {
-  padding-top: 5vw;
+  /* padding-top: 3vw; */
 }
 .history-contents .history-wrapper .history-box li {
   margin: 2.188vw 0;
@@ -294,10 +347,12 @@
 }
 .history-contents .history-img-box .history-icon {
   position: absolute;
-  right: 0; top: 50%;
+  right: 0;
+  top: 50%;
   transform: translateY(-50%);
 }
 .history-contents .history-img-box .history-text {
   position: absolute;
-  bottom: -10px; right: 2.708vw;
+  bottom: -10px;
+  right: 2.708vw;
 }

@@ -4,7 +4,7 @@
 body {
   font-family: var(--primary-fonts);
   font-weight: var(--font-regular);
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 section {
   padding: 0 7.292vw;
@@ -15,7 +15,8 @@ section {
 .code-desc {
   font-family: var(--coding-fonts);
   position: absolute;
-  bottom: 20px; left: 20px;
+  bottom: 20px;
+  left: 20px;
   opacity: 0.5;
   z-index: 99;
 }
@@ -23,8 +24,6 @@ section {
   font-size: var(--title-lg);
   font-weight: var(--font-extra-bold);
 }
-/* .eye { position: relative; top: 0; width: 100px; height: 100px; margin: 0 15px; background: #fff; border-radius: 50%; overflow: hidden; } 
-.eye:before { content: ''; position: absolute; top: 50px; left:25px; width:45px; height: 45px; background: #333; border-radius: 50%; transform: translate(-50%, -50%); }  */
 
 /***** header *****/
 .header {
@@ -47,7 +46,8 @@ section {
 .header .side-menu-wrapper {
   width: 325px;
   position: absolute;
-  top: -25px; right: 0;
+  top: -25px;
+  right: 0;
   top: 0;
   color: #fff;
 }
@@ -59,23 +59,26 @@ section {
   gap: 5px;
   padding: 10px;
   position: absolute;
-  top: 15px; right: 30px;
+  top: 15px;
+  right: 30px;
   z-index: 9999;
   cursor: pointer;
 }
 .header .side-menu-wrapper .side-menu-btn span {
   display: block;
-  width: 35px; height: 5px;
+  width: 35px;
+  height: 5px;
   background-color: var(--primary-black);
   border-radius: var(--primary-border-radius);
-  transition: .3s;
+  transition: 0.3s;
 }
 /* side-menu-list */
 .header .side-menu-wrapper .side-menu {
   padding: 70px 0;
   font-size: var(--title-md);
   font-weight: var(--font-extra-bold);
-  background: url(../../images/menu-bg-icon.png) no-repeat 180% 130%, var(--primary-black);
+  background: url(../../images/menu-bg-icon.png) no-repeat 180% 130%,
+    var(--primary-black);
   border-radius: 0 0 30px 30px;
   display: none;
 }
@@ -85,9 +88,9 @@ section {
 }
 .header .side-menu-wrapper .side-menu li a {
   display: block;
-  width: max-content;  
+  width: max-content;
   border-bottom: 0.26vw solid transparent;
-  transition: .3s;
+  transition: 0.3s;
   opacity: 0.5;
 }
 /* 마우스 허버 이벤트 */
@@ -120,7 +123,7 @@ section {
   height: 28.646vw;
   padding: 3.906vw 8.333vw 0;
   background-color: var(--primary-red);
-  color:#fff;
+  color: #fff;
   position: relative;
 }
 .footer .contact-box .contact-title {
@@ -133,12 +136,16 @@ section {
 }
 .footer .icon-box {
   display: flex;
-  gap : 1.563vw;
+  gap: 1.563vw;
 }
 .footer .contact-box a {
   text-indent: -9999px;
   width: max-content;
   padding: 1.042vw;
+  transition: 0.4s;
+}
+.footer .contact-box a:hover {
+  transform: scale(1.2);
 }
 .footer .contact-box .github-icon {
   background: url(../../images/footer-github-icon.svg) no-repeat 50% / contain;
@@ -153,7 +160,8 @@ section {
   display: flex;
   justify-content: flex-end;
   position: absolute;
-  top: 3.906vw; right: 8.333vw;
+  top: 3.906vw;
+  right: 8.333vw;
   gap: 5.469vw;
 }
 .footer .footer-menu li a {
@@ -166,11 +174,13 @@ section {
 .footer .footer-box .footer-copyright {
   font-size: var(--desc-sx);
   position: absolute;
-  right: 1.563vw; bottom: 50%;
+  right: 1.563vw;
+  bottom: 50%;
   transform: translateY(-50%);
 }
 .footer .footer-box img {
   width: 100%;
   position: absolute;
-  bottom: 0; left: 0;
+  bottom: 0;
+  left: 0;
 }
