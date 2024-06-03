@@ -8,6 +8,9 @@
 1. [디자인 / 코드 분석](https://www.figma.com/design/baswPO3c2rYX9IlshFbnqN/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4?node-id=0-1&t=UX1BhEMjkeDY28Mo-1, "피그마로 바로가기")
 2. [포트폴리오](https://gonghanna.github.io/Portfolio/, "공한나의 포트폴리오")
 
+## 240603 ##
+- Coding : index.css 수정 / index.js 이벤트 추가(부드러운 스크롤 이동)  / css animation 추가
+
 ## 240602 ##
 - Coding : index.css 작업 / index.js 스크롤 이벤트 추가, 가로 스크롤, 랜덤메세지  / index.html 구조 수정
 
