@@ -4,22 +4,24 @@
   font-family: "Montserrat", sans-serif;
   font-family: "Indie Flower", cursive;
 */
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* 변수 설정 */
 :root {
   /* fonts */
-  --primary-fonts : "Montserrat",-apple-system, BlinkMacSystemFont, "Helvetica Neue","Apple SD Gothic Neo", Arial, sans-serif;
-  --coding-fonts : "Indie Flower", cursive;
+  --primary-fonts: "Montserrat", -apple-system, BlinkMacSystemFont,
+    "Helvetica Neue", "Apple SD Gothic Neo", Arial, sans-serif;
+  --coding-fonts: "Indie Flower", cursive;
 
   /* font size */
   /* 100px, 60px ,40px, 30px, 25px, 20px */
-  --title-main : 5.208vw;
-  --title-lg : 3.125vw;
+  --title-main: 5.208vw;
+  --title-lg: 3.125vw;
   --title-md: 2.083vw;
+  --m-title: 22px;
   --desc-lg: 1.563vw;
-  --desc-md: 1.302vw;
-  --desc-sm: 1.042vw;
+  --desc-md: 25px;
+  --desc-sm: 20px;
   --desc-sx: 14px;
   --code-font-sm: 12px;
 
@@ -30,10 +32,10 @@
   --font-regular: 400;
 
   /* colors */
-  --primary-black : #222225;
-  --primary-red : #D1263D;
-  --primary-green : #98C1C2;
+  --primary-black: #222225;
+  --primary-red: #d1263d;
+  --primary-green: #98c1c2;
 
   /* border-radius */
-  --primary-border-radius : 30px;
+  --primary-border-radius: 30px;
 }
