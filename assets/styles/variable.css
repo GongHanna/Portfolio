@@ -11,7 +11,8 @@
   /* fonts */
   --primary-fonts: "Montserrat", -apple-system, BlinkMacSystemFont,
     "Helvetica Neue", "Apple SD Gothic Neo", Arial, sans-serif;
-  --coding-fonts: "Indie Flower", cursive;
+  --coding-fonts: "Indie Flower", -apple-system, BlinkMacSystemFont,
+    "Helvetica Neue", "Apple SD Gothic Neo", Arial, cursive;
 
   /* font size */
   /* 100px, 60px ,40px, 30px, 25px, 20px */

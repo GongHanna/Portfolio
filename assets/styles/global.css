@@ -255,6 +255,14 @@ section {
     width: 30vh;
   }
 
+  .header .side-menu-wrapper .side-menu li a {
+    border-width: 3px;
+  }
+
+  .header .side-menu-wrapper .side-menu li a:hover {
+    border-width: 3px;
+  }
+
   .header .side-menu-wrapper .side-menu-btn span {
     width: 25px;
     height: 4px;

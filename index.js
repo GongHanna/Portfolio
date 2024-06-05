@@ -66,31 +66,55 @@ $(function () {
 });
 
 // 뷰포트기준 500px 넘을 때만 가로 스크롤 이벤트
-if ($(window).width() > 501) {
-  gsap.registerPlugin(ScrollTrigger);
-  const horizontalScroll = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".project-contents",
-      pin: true,
-      scrub: true,
-      start: "top top",
-      end: () =>
-        `+=${
-          document.querySelector(".project-wrapper").offsetWidth -
-          window.innerWidth
-        }`,
-    },
-  });
+let horizontalScrollTrigger;
 
-  horizontalScroll.to(".project-wrapper", {
-    x: () =>
-      -(
-        document.querySelector(".project-wrapper").scrollWidth -
-        window.innerWidth
-      ),
-    ease: "none",
-  });
+function initHorizontalScroll() {
+  if ($(window).width() > 500) {
+    gsap.registerPlugin(ScrollTrigger);
+
+    if (!horizontalScrollTrigger) {
+      const horizontalScroll = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".project-contents",
+          pin: true,
+          scrub: true,
+          start: "top top",
+          end: () =>
+            `+=${
+              document.querySelector(".project-wrapper").offsetWidth -
+              window.innerWidth
+            }`,
+        },
+      });
+
+      horizontalScroll.to(".project-wrapper", {
+        x: () =>
+          -(
+            document.querySelector(".project-wrapper").scrollWidth -
+            window.innerWidth
+          ),
+        ease: "none",
+      });
+
+      horizontalScrollTrigger = horizontalScroll.scrollTrigger;
+    }
+  } else {
+    // 특정 가로 스크롤 트리거만 해제
+    if (horizontalScrollTrigger) {
+      horizontalScrollTrigger.kill();
+      horizontalScrollTrigger = null;
+    }
+    gsap.set(".project-wrapper", { x: 0 }); // 원래 위치로 되돌리기
+  }
 }
+
+// 초기화 호출
+initHorizontalScroll();
+
+// 윈도우 크기 변경 이벤트에 대응
+$(window).resize(function () {
+  initHorizontalScroll();
+});
 
 // skill 클릭 이벤트
 $(".skill-contents .skill-wrapper li").on("click", (e) => {
