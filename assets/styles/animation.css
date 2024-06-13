@@ -5,11 +5,9 @@
   0% {
     transform: rotateZ(-15deg);
   }
-
   50% {
     transform: rotateZ(15deg);
   }
-
   100% {
     transform: rotateZ(-15deg);
   }
@@ -20,7 +18,6 @@
   from {
     transform: translate(-50%, 0) scale(1);
   }
-
   to {
     transform: translate(-50%, 10%) scale(1, 0.7);
   }
@@ -28,13 +25,11 @@
 
 /* 스킬 텍스트 */
 @keyframes waviy {
-
   0%,
   40%,
   100% {
     transform: translateY(0);
   }
-
   20% {
     transform: translateY(-10px);
   }

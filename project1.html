@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>project1</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./images/favicon/site.webmanifest">
+  <!-- og -->
+  <meta property="og:title" content="HANNA'S PORTFOLIO">
+  <meta property="og:url" content="https://gonghanna.github.io/Portfolio/project1.html">
+  <!-- <meta property="og:image" content="https://gonghanna.github.io/Portfolio/images/og-img.png">
+  <meta property="og:description" content="안녕하세요, 공한나의 포트폴리오 입니다."> -->
+  <meta property="og:type" content="website">
+  <!-- reset css -->
+  <link rel="stylesheet" href="./assets/styles/reset.css">
+  <!-- 공통된 css style -->
+  <link rel="stylesheet" href="./assets/styles/variable.css">
+  <link rel="stylesheet" href="./assets/styles/global.css">
+  <link rel="stylesheet" href="./assets/styles/animation.css">
+  <link rel="stylesheet" href="./assets/styles/swiper-bundle.min.css">
+  <!-- page 별 css style -->
+  <link rel="stylesheet" href="./project1.css">
+  <!-- jQuery -->
+  <script src="./assets/js/jquery-3.7.1.min.js"></script>
+  <!-- pulgIn -->
+  <script src="./assets/js/gsap.min.js"></script>
+  <script src="./assets/js/ScrollTrigger.min.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <!-- page 별 사용되는 js -->
+  <script defer src="./assets/js/global.js"></script>
+  <script defer src="./project1.js"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header">
+    <h1 class="logo">
+      <a href="./index.html">로고</a>
+    </h1>
+
+    <!-- side-menu -->
+    <div class="side-menu-wrapper">
+      <!-- side-menu-button -->
+      <div class="side-menu-btn">
+        <span class="bar1">버튼모양1</span>
+        <span class="bar2">버튼모양2</span>
+        <span class="bar3">버튼모양3</span>
+      </div>
+      <!-- side-menu-list / button 클릭 시 내용 보임 -->
+      <ul class="side-menu">
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./index.html#about">ABOUT</a></li>
+        <li><a href="./index.html#skills">SKILLS</a></li>
+        <li><a href="./index.html#project">PROJECT</a></li>
+        <li><a href="./index.html#contact">CONTACT</a></li>
+      </ul>
+      <!-- code -->
+      <p class="code-desc">&lt;div class="menu"&gt;</p>
+    </div>
+  </header>
+
+  <!-- contetns -->
+  <!-- introduction -->
+  <article class="introduction">
+    <h2 class="intro-title">Personal Project</h2>
+    <h3 class="intro-sub-title">푸르넷 공부방</h3>
+  </article>
+
+  <!-- project -->
+  <article class="project">
+    <section class="text-wrapper">
+      <h2 class="main-title">Project</h2>
+      <ul class="overview-list rolled-over-txt">
+        <li class="title">Overview</li>
+        <li class="overview-text">
+          <p class="date">2024. 06 . 05 - 2024. 06. 12 </p>
+          <p class="desc">트랜디한 디자인에 적용된 다양한 퍼블리싱 기술들을 공부하기에 적합하기에 선정</p>
+        </li>
+      </ul>
+      <ul class="goal-list rolled-over-txt">
+        <li class="title">Goal</li>
+        <li class="goal-text">
+          <p class="desc">정해진 시간 내 웹 <strong>똑같이</strong> 구현</p>
+          <p class="desc"><strong>JSON</strong> 작성 및 연결</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="site-wrapper">
+      <img src="./images/sub-page-purunet.png" alt="purunet-site-img" class="site-img">
+      <a href="https://purunet.kumsung.co.kr/" target="_blank" class="site-btn">Original Site</a>
+    </section>
+  </article>
+
+  <!-- skills -->
+  <article class="skills">
+    <h2 class="main-title">Publishing Skills</h2>
+    <ul class="skill-wrapper">
+      <li class="css-list rolled-over-txt">
+        <h3 class="title">CSS</h3>
+        <p class="desc">다양한 <strong>SVG animation</strong> 적용</p>
+        <p class="desc">Animation delay를 활용한 animation 적용</p>
+        <p class="desc">hover 이벤트 적용</p>
+        <p class="desc"><strong>::befeore ::after</strong> 값 적용</p>
+        <p class="desc">flex 및 position을 적용한 style 작업</p>
+      </li>
+      <li class="js-list rolled-over-txt">
+        <h3 class="title">JavaScrpit & jQuery</h3>
+        <p class="desc">Swiper를 이용한 슬라이드 레이아웃</p>
+        <p class="desc">버튼 클릭 이벤트</p>
+        <p class="desc">특정 구간 스크롤 이벤트</p>
+        <p class="desc"><strong>SVG 색상 변경</strong></p>
+        <p class="desc">page load 이벤트</p>
+        <p class="desc"><strong>숫자 카운트 함수</strong>를 활용한 이벤트</p>
+      </li>
+    </ul>
+  </article>
+
+  <!-- issue -->
+  <article class="issue">
+    <h2 class="main-title">Issue & Solution</h2>
+    <div class="issue-container">
+      <!-- 첫번째 이슈 -->
+      <section class="first-issue">
+        <div class="issue-contents">
+          <h3 class="issue-title rolled-over-txt">1. SVG 색상이 왜 변경이 안될까?</h3>
+          <ul class="issue-list">
+            <li>
+              <h4 class="sub-title">Issue</h4>
+              <p class="issue-desc">SVG 색상 변경을 위해 color 값을 주었지만 색상이 바뀌지 않음</p>
+              <img src="./images/purunet-issue1-1.png" alt="issue1" class="issue-img">
+            </li>
+          </ul>
+        </div>
+
+        <ul class="solution-contents">
+          <li>
+            <h4 class="sub-title">Solution</h4>
+            <p class="solution-desc">SVG의 색상을 변경하려면 SVG 자식이 가지고 있는<br>
+              &lt;path&gt;의 색상을 제어해야 함</p>
+            <p class="solution-desc">
+              SVG 자식인 &lt;path&gt;에 class 명 부여
+            </p>
+            <p class="solution-desc">&lt;path&gt;는 color가 아닌 fill로 색상 제어</p>
+            <img src="./images/purunet-issue1-1.png" alt="solution1" class="solution-img">
+          </li>
+        </ul>
+      </section>
+      <!-- 두번째 이슈 -->
+      <section class="second-issue">
+        <div class="issue-contents">
+          <h3 class="issue-title rolled-over-txt">2. GSAP? PulgIn? JS?</h3>
+          <ul class="issue-list">
+            <li>
+              <h4 class="sub-title">Issue</h4>
+              <p class="issue-desc">스크롤시 특정 구간에서 발생하는 이벤트를 위해 기존에 배웠던<br>ScrollTrigger에 대해서 공부</p>
+              <img src="./images/purunet-issue2-1.png" alt="issue2" class="issue-img">
+            </li>
+          </ul>
+        </div>
+
+        <ul class="solution-contents">
+          <li>
+            <h4 class="sub-title">Solution</h4>
+            <p class="solution-desc">scrollTrigger는 이 사이트에 필요 없다고 판단</p>
+            <p class="solution-desc">css로 돌아가서 position: sticky로 제어</p>
+            <p class="solution-desc">jQuery의 scroll 이벤트 메소드 사용</p>
+            <img src="./images/purunet-issue2-2.png" alt="solution2" class="solution-img">
+          </li>
+        </ul>
+      </section>
+      <!-- 마지막 이슈 -->
+      <section class="last-issue">
+        <div class="issue-contents">
+          <h3 class="issue-title rolled-over-txt">3. 애니메이션일까 로딩일까?</h3>
+          <ul class="issue-list">
+            <li>
+              <h4 class="sub-title">Issue</h4>
+              <p class="issue-desc">페이지 내 이벤트 요소가 많아 어떤 이벤트 메서드를 사용해야<br>
+                그대로 구현이 가능할지 구분이 힘듦</p>
+              <img src="./images/purunet-issue3-1.png" alt="issue3" class="issue-img">
+            </li>
+          </ul>
+        </div>
+
+        <ul class="solution-contents">
+          <li>
+            <h4 class="sub-title">Solution </h4>
+            <p class="solution-desc">이벤트들을 정리하기 위해 노트에 이벤트 순서 필기</p>
+            <p class="solution-desc">load 이벤트 메소드 사용 및 addClass() 적용</p>
+            <p class="solution-desc">animation-delay 적용</p>
+            <img src="./images/purunet-issue3-2.png" alt="solution3" class="solution-img">
+          </li>
+        </ul>
+      </section>
+    </div>
+  </article>
+
+  <!-- review -->
+  <article class="review">
+    <h2 class="main-title">Review</h2>
+    <div class="text-wrapper">
+      <p class="desc rolled-over-txt">이 사이트 개인 프로젝트로 선정했을 때, 목표 기간을 잡았습니다.</p>
+      <p class="desc rolled-over-txt">
+        하루에 목표한 것을 마무리 하지 못하거나 막힌 부분이 있다면 자기 전까지 계속 생각이 났습니다.
+        <strong>‘이 코드는 이런 코드로 작성해보면 어떨까?’</strong>
+      </p>
+      <p class="desc rolled-over-txt">이벤트 적용에 있어서 막히는 부분이 생기면 원본 사이트에 들어가서 막힌 부분을 하염없이 보고 생각했습니다.
+        <br>그리고 나서 적용 안 된 이벤트들을 노트에 작성하며 고민하고 공부했습니다.
+      </p>
+      <p class="desc rolled-over-txt">몇 번의 html 구조 수정과 css 수정, 그리고 JavaScript의 다양한 이벤트들이 저를 괴롭게 만들었지만,
+        <br>그 괴로움과 고뇌의 시간들이 모여 웹 사이트가 완성되었을 때의 쾌감과 즐거움은 잊을 수 없을 것 같습니다.
+      </p>
+      <p class="desc rolled-over-txt">이번 경험을 통해 많은 것들을 공부하고, 좀 더 발전할 수 있게 된 좋은 기회였다고 생각합니다.</p>
+    </div>
+
+    <div class="button-box">
+      <a href="https://github.com/GongHanna/Personal-Project" target="_blank" class="site-btn">작업일지</a>
+      <a href="https://gonghanna.github.io/Personal-Project/" target="_blank" class="site-btn">View Site</a>
+    </div>
+  </article>
+
+  <!-- footer -->
+  <footer class="footer" id="contact">
+    <div class="contact-box">
+      <img class="footer-img-text" src="./images/history-portfolio-text.png" alt="portfolio">
+      <h3 class="contact-title">CONTACT ME</h3>
+      <p class="email">han_nah2853@naver.com</p>
+      <div class="icon-box">
+        <a href="https://github.com/GongHanna/study" target="_blank" class="github-icon">깃허브로 이동</a>
+        <a href="#" target="_blank" class="email-icon">이메일로 이동</a>
+      </div>
+    </div>
+
+    <ul class="footer-menu">
+      <li><a href="./index.html">HOME </a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#skills">SKILLS</a></li>
+      <li><a href="#project">PROJECT</a></li>
+    </ul>
+
+    <div class="footer-box">
+      <p class="footer-copyright">© 2024 Design & Published By Gonghanna All Rights Reserved.</p>
+      <img src="./images/footer-portfolio-text.png" alt="portfolio">
+    </div>
+  </footer>
+</body>
+
+</html>
