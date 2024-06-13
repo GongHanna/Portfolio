@@ -8,6 +8,16 @@
 1. [디자인 / 코드 분석](https://www.figma.com/design/baswPO3c2rYX9IlshFbnqN/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4?node-id=0-1&t=UX1BhEMjkeDY28Mo-1, "피그마로 바로가기")
 2. [포트폴리오](https://gonghanna.github.io/Portfolio/, "공한나의 포트폴리오")
 
+## 240613 ##
+- 포트폴리오 서브 페이지 디자인 및 코드 분석
+- 개인 프로젝트 깃허브 페이지스 제작
+- 개인 프로젝트 리드미 파일 작성
+- 서브 페이지 코드 분석
+- 서브 페이지 html 코드 작성
+- 서브 페이지 css 작업
+- 서브 페이지 js 이벤트 작업
+- 메인 페이지 html 구조 수정 및 css 수정
+
 ## 240612 ##
 - 개인프로젝트 : js 이벤트 수정 및 추가 / 개인 프로젝트 완료
 1. main-page 이벤트 : css animation 추가 및 적용, js 이벤트 메서드 코드 작성
