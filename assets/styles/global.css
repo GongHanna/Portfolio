@@ -24,6 +24,18 @@ section {
   font-size: var(--title-lg);
   font-weight: var(--font-extra-bold);
 }
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+body::-webkit-scrollbar-thumb { 
+  background-color: var(--primary-red);
+}
+body::-webkit-scrollbar-button {
+  display: none;
+}
 
 /***** header *****/
 .header {
