@@ -80,9 +80,8 @@ function initHorizontalScroll() {
           scrub: true,
           start: "top top",
           end: () =>
-            `+=${
-              document.querySelector(".project-wrapper").offsetWidth -
-              window.innerWidth
+            `+=${document.querySelector(".project-wrapper").offsetWidth -
+            window.innerWidth
             }`,
         },
       });
@@ -127,8 +126,8 @@ gsap.utils.toArray(".rolled-over-txt").forEach((txt) => {
     .timeline({
       scrollTrigger: {
         trigger: txt,
-        start: "100% 100%",
-        end: "50% 50%",
+        start: "50% 100%",
+        end: "100% 100%",
         scrub: 1,
       },
     })
