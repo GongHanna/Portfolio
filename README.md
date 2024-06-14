@@ -8,6 +8,13 @@
 1. [디자인 / 코드 분석](https://www.figma.com/design/baswPO3c2rYX9IlshFbnqN/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4?node-id=0-1&t=UX1BhEMjkeDY28Mo-1, "피그마로 바로가기")
 2. [포트폴리오](https://gonghanna.github.io/Portfolio/, "공한나의 포트폴리오")
 
+## 240614 ##
+- 메인 페이지 디자인 수정
+- 메인 페이지 html 구조 수정 및 css 수정
+- 서브 페이지 팀 프로젝트 디자인 및 내용 구성
+- 서브 페이지 html 구조 작성 및 css 작업
+- a 링크 수정
+
 ## 240613 ##
 - 포트폴리오 서브 페이지 디자인 및 코드 분석
 - 개인 프로젝트 깃허브 페이지스 제작
