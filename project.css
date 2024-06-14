@@ -293,8 +293,8 @@ strong {
   font-size: var(--sub-page-desc);
 }
 .review .button-box .site-btn {
-  width: 173px; height: 53px;
-  line-height: 53px;
+  width: 9.01vw; height: 2.76vw;
+  line-height: 2.76vw;
   border: 1px solid #fff;
   border-radius: var(--primary-border-radius);
   position: absolute;
@@ -319,7 +319,6 @@ strong {
 }
 /* 아트보다 */
 .review .button-box .artboda-site-btn {
-  padding: 0 20px;
-  width: auto;
-  margin-left: 1%;
+  width: 12.292vw;
+  margin-left: 2%;
 }
