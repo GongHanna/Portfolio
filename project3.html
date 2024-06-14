@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>project3</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./images/favicon/site.webmanifest">
+  <!-- og -->
+  <meta property="og:title" content="HANNA'S PORTFOLIO">
+  <meta property="og:url" content="https://gonghanna.github.io/Portfolio/project1.html">
+
+  <meta property="og:type" content="website">
+  <!-- reset css -->
+  <link rel="stylesheet" href="./assets/styles/reset.css">
+  <!-- 공통된 css style -->
+  <link rel="stylesheet" href="./assets/styles/variable.css">
+  <link rel="stylesheet" href="./assets/styles/global.css">
+  <link rel="stylesheet" href="./assets/styles/animation.css">
+  <link rel="stylesheet" href="./assets/styles/swiper-bundle.min.css">
+  <!-- page 별 css style -->
+  <link rel="stylesheet" href="./project.css">
+  <!-- jQuery -->
+  <script src="./assets/js/jquery-3.7.1.min.js"></script>
+  <!-- pulgIn -->
+  <script src="./assets/js/gsap.min.js"></script>
+  <script src="./assets/js/ScrollTrigger.min.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <!-- page 별 사용되는 js -->
+  <script defer src="./assets/js/global.js"></script>
+  <script defer src="./project.js"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header">
+    <h1 class="logo">
+      <a href="./index.html">로고</a>
+    </h1>
+
+    <!-- side-menu -->
+    <div class="side-menu-wrapper">
+      <!-- side-menu-button -->
+      <div class="side-menu-btn">
+        <span class="bar1">버튼모양1</span>
+        <span class="bar2">버튼모양2</span>
+        <span class="bar3">버튼모양3</span>
+      </div>
+      <!-- side-menu-list / button 클릭 시 내용 보임 -->
+      <ul class="side-menu">
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./index.html#about">ABOUT</a></li>
+        <li><a href="./index.html#skills">SKILLS</a></li>
+        <li><a href="./index.html#project">PROJECT</a></li>
+        <li><a href="./index.html#contact">CONTACT</a></li>
+      </ul>
+      <!-- code -->
+      <p class="code-desc">&lt;div class="menu"&gt;</p>
+    </div>
+  </header>
+
+  <!-- contetns -->
+  <!-- introduction -->
+  <article class="introduction">
+    <h2 class="intro-title">Team Project</h2>
+    <h3 class="intro-sub-title">아트보다</h3>
+  </article>
+
+  <!-- project -->
+  <article class="project">
+    <section class="text-wrapper">
+      <h2 class="main-title">Project</h2>
+      <ul class="overview-list rolled-over-txt">
+        <li class="title">Overview</li>
+        <li class="overview-text">
+          <p class="date">2024. 03 . 19 - 2024. 04. 05</p>
+          <p class="team-name">
+            <strong>네잎클로버 ｜</strong> 공한나 / 안윤지 / 송예슬 / 하은혜
+          </p>
+          <p class="desc">‘아트보다’는 간편한 문화 생활을 즐기기 위한 전시 예약 어플입니다.</p>
+        </li>
+      </ul>
+      <ul class="goal-list rolled-over-txt">
+        <li class="title">Goal</li>
+        <li class="goal-text">
+          <p class="desc">첫 팀 프로젝트를 통해 <strong>커뮤니케이션 능력 키우기 및 디자인 통일</strong></p>
+          <p class="desc"><strong>간편한</strong> 예약 시스템</p>
+          <p class="desc">기존 사이트에 없는 <strong>예약 시스템 도입</strong></p>
+          <p class="desc">
+            <strong>UI / UX</strong> 에 대한 이해도 증가
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="site-wrapper">
+      <img src="./images/sub-page-artboda.png" alt="artboda-img" class="site-img artboda-site-img">
+    </section>
+  </article>
+
+  <!-- 담당 업무 및 Process -->
+  <article class="work">
+    <h2 class="main-title">담당 업무</h2>
+    <ul class="work-wrapper">
+      <li class="work-list rolled-over-txt">
+        <p class="desc">아트맵 자료 조사 및 <strong>페르소나</strong> 작성</p>
+        <p class="desc"><strong>사용자 시나리오 및 정보구조도</strong> 작성</p>
+        <p class="desc"><strong>Home</strong> 화면 와이어 프레임 및 디자인</p>
+        <p class="desc"><strong>Workflow</strong> 작성</p>
+        <p class="desc"><strong>Style Guide</strong> 작성</p>
+      </li>
+      <li class="process-list">
+        <h3 class="main-title">Process</h3>
+        <img src="./images/sub-page-artboda-process.png" alt="process-img">
+      </li>
+    </ul>
+  </article>
+
+  <!-- view-more -->
+  <article class="view-more">
+    <h2 class="main-title">View More</h2>
+    <div class="view-wrapper">
+      <div class="right-contents artboda-right-contents">
+        <img src="./images/sub-page-artboda-report.png" alt="완료보고서" class="report-img">
+        <a href="./assets/document/artboda-완료보고서.pdf" target="_blank" class="view-btn">완료 보고서 보러가기</a>
+      </div>
+      <div class="left-contents artboda-left-contents">
+        <img src="./images/sub-page-artboda-ppt.png" alt="발표PPT">
+        <a href="./assets/document/artboda-PPT.pdf" target="_blank" class="view-btn">발표 PPT 보러가기</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- review -->
+  <article class="review">
+    <h2 class="main-title">Review</h2>
+    <div class="text-wrapper">
+      <p class="desc">처음으로 시작한 팀 프로젝트여서 설레기도 하고 걱정도 되었습니다.</p>
+      <p class="desc">
+        이 프로젝트를 진행하게 되면서 생각보다 자료조사는 다양하고 많이 해야된다는 사실을 알게되었습니다.<br>
+        결과에 대한 값에는 타당한 근거와 자료가 필요하다는 사실 또한 중요하다는 걸 깨달았습니다.
+      </p>
+      <p class="desc">
+        처음엔 예쁜 디자인이 최고의 디자인이다 라는 생각이<br>
+        <strong>사용자의 입장에서 많은 걸 고려하고 생각한 뒤 그에 맞는 디자인을 뽑아 내야 좋은 디자인이다</strong> 라는 생각의 전환점 또한 가질 수 있었습니다.
+      </p>
+      <p class="desc">
+        이번 프로젝트를 진행하면서 IOS 시스템에 대한 이해도가 증가할 수 있었으며,<br>
+        팀 작업으로 작업을 진행하여도 디자인 통일성과 팀 커뮤니케이션의 중요성에 대해 알 수 있게 된 좋은 경험 이였습니다.
+      </p>
+    </div>
+
+    <div class="button-box">
+      <a href="https://github.com/GongHanna/TeamProject?tab=readme-ov-file#uiux-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8"
+        target="_blank" class="site-btn">팀 작업일지</a>
+      <a href="https://www.figma.com/proto/6BDxDXycL2p5GzuZ5MmI5O/%EB%84%A4%EC%9E%8E%ED%81%B4%EB%A1%9C%EB%B2%84-%2F-UIUX-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%80-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?node-id=1-2267&t=Bn1YDGIB30GFtguz-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
+        target="_blank" class="site-btn artboda-site-btn">프로토타입
+        보러가기</a>
+    </div>
+  </article>
+
+  <!-- footer -->
+  <footer class="footer" id="contact">
+    <div class="contact-box">
+      <img class="footer-img-text" src="./images/history-portfolio-text.png" alt="portfolio">
+      <h3 class="contact-title">CONTACT ME</h3>
+      <p class="email">han_nah2853@naver.com</p>
+      <div class="icon-box">
+        <a href="https://github.com/GongHanna/study" target="_blank" class="github-icon">깃허브로 이동</a>
+        <a href="#" target="_blank" class="email-icon">이메일로 이동</a>
+      </div>
+    </div>
+
+    <ul class="footer-menu">
+      <li><a href="./index.html">HOME </a></li>
+      <li><a href="./index.html#about">ABOUT</a></li>
+      <li><a href="./index.html#skills">SKILLS</a></li>
+      <li><a href="./index.html#project">PROJECT</a></li>
+    </ul>
+
+    <div class="footer-box">
+      <p class="footer-copyright">© 2024 Design & Published By Gonghanna All Rights Reserved.</p>
+      <img src="./images/footer-portfolio-text.png" alt="portfolio">
+    </div>
+  </footer>
+</body>
+
+</html>

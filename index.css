@@ -269,58 +269,59 @@
   background: url(./images/project3-bg-icon.png) no-repeat 100% 10%,
     var(--primary-black);
 }
-.project-contents .sticky-box .project-wrapper li {
-  width: 100%;
-  height: 100vh;
+.project-contents .sticky-box .project-wrapper .project-list {
+  width: 100%; height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 2vw;
   padding-top: 9vw;
   position: relative;
 }
-.project-contents .sticky-box .project-wrapper li .img-box {
-  align-self: center;
-  padding-top: 2vw;
+.project-contents .sticky-box .project-wrapper .project-list .img-box {
+  width: 45%;
 }
-.project-contents .sticky-box .project-wrapper li .img-box img {
-  width: 71.823vw;
-  border-radius: var(--primary-border-radius);
-}
-.project-contents .sticky-box .project-wrapper li .text-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 71.823vw;
-  padding: 0 30px;
-}
-.project-contents .sticky-box .project-wrapper li .text-box .project-name {
-  /* width: 71.823vw; */
-  font-weight: var(--font-bold);
-  font-size: var(--title-md);
-}
-.project-contents .sticky-box .project-wrapper li .text-box .project-desc {
-  /* display: inline; */
-  font-size: var(--desc-sm);
-
-  /* width: 71.823vw; */
-  /* text-indent: 30px; */
-}
-.project-contents .sticky-box .project-wrapper li .more-btn {
-  width: 3.438vw;
-  height: 3.438vw;
-  border-radius: 50%;
-  background: url(./images/next-icon.svg) no-repeat 50% / 50%,
-    rgba(255, 255, 255, 0.7);
-  text-indent: -9999px;
-  position: absolute;
-  top: 42.271vw;
-  right: 20%;
+.project-contents .sticky-box .project-wrapper .project-list .img-box img {
+  width: 100%;
   transition: 0.4s;
 }
-.project-contents .sticky-box .project-wrapper li .more-btn:hover {
-  background: url(./images/next-icon.svg) no-repeat 50% / 50%,
-    rgba(255, 255, 255, 1);
+.project-contents .sticky-box .project-wrapper .project-list .img-box img:hover {
+  transform: scale(1.1);
+}
+.project-contents .sticky-box .project-wrapper .project-list .text-box {
+  padding: 0 30px;
+}
+.project-contents .sticky-box .project-wrapper .project-list .text-box .project-number {
+  font-weight: var(--font-regular);
+  font-size: var(--desc-sm);
+  margin-bottom: 20px;
+}
+.project-contents .sticky-box .project-wrapper .project-list .text-box .project-name {
+  font-weight: var(--font-bold);
+  font-size: var(--title-md);
+  margin-bottom: 20px;
+}
+.project-contents .sticky-box .project-wrapper .project-list .text-box .project-desc {
+  font-size: var(--desc-sm);
+}
+.project-contents .sticky-box .project-wrapper .project-list .more-btn {
+  margin-top: 50px;
+  background-color: #fff;
+  border-radius: var(--primary-border-radius);
+  color: var(--primary-black);
+  font-weight: var(--font-bold);
+  font-size: var(--sub-page-desc);
+  border: 1px solid transparent;
+  width: 173px; height: 53px;
+  display: block;
+  text-align: center;
+  line-height: 53px;
+  transition: 0.4s;
+}
+.project-contents .sticky-box .project-wrapper .project-list .more-btn:hover {
+  background-color: transparent;
+  color: #fff;
+  border-color: #fff;
 }
 
 /***** history-contents *****/
