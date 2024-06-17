@@ -377,11 +377,14 @@
     background: url(./images/project3-bg-icon.png) no-repeat 100% 10% / contain,
       var(--primary-black);
   }
-  .project-contents .sticky-box .project-wrapper li {
+  .project-contents .sticky-box .project-wrapper .project-list {
     height: 80vh;
   }
-  .project-contents .sticky-box .project-wrapper li .img-box {
-    padding-top: 5vw;
+  .project-contents .sticky-box .project-wrapper .project-list .more-btn {
+    margin-top: 40px;
+    font-size: 14px;
+    width: 120px; height: 40px;
+    line-height: 40px;
   }
 }
 
@@ -419,7 +422,8 @@
 
   /***** skill-contents *****/
   .skill-contents {
-    height: 1000px;
+    height: auto;
+    padding-bottom: 100px;
     grid-template-columns: 1fr;
     grid-auto-rows: 0.5fr 2fr;
   }
@@ -455,30 +459,36 @@
     position: static;
     flex-direction: column;
     width: 100%;
+    padding: 50px 0;
   }
-  .project-contents .sticky-box .project-wrapper .project1 {
-    background: url(./images/project1-bg-icon.png) no-repeat -10% 30% / 50%;
+  .project-contents .sticky-box .project-wrapper .project-list .img-box {
+    width: 85%;
   }
-  .project-contents .sticky-box .project-wrapper li {
+  .project-contents .sticky-box .project-wrapper .project-list {
     height: auto;
-    align-self: center;
-    justify-self: center;
-    padding: 40px 0;
+    flex-direction: column;
   }
-  .project-contents .sticky-box .project-wrapper li .img-box {
-    padding-top: 40px;
+  .project-contents .sticky-box .project-wrapper .project-list .text-box {
+    padding: 0;
+    width: 80%;
+    margin: 0 auto;
   }
-  .project-contents .sticky-box .project-wrapper li .project-name {
+  .project-contents .sticky-box .project-wrapper .project-list .text-box .project-number {
+    font-size: 10px;
+    margin: 10px 0;
+  }
+  .project-contents .sticky-box .project-wrapper .project-list .text-box .project-name {
     font-size: var(--m-title);
+    margin-bottom: 10px;
   }
-  .project-contents .sticky-box .project-wrapper li .project-desc {
-    font-size: var(--desc-sx);
+  .project-contents .sticky-box .project-wrapper .project-list .text-box .project-desc {
+    font-size: 14px;
   }
-  .project-contents .sticky-box .project-wrapper li .more-btn {
-    width: 30px;
-    height: 30px;
-    top: 70%;
-    right: 15%;
+  .project-contents .sticky-box .project-wrapper .project-list .more-btn {
+    font-size: 10px;
+    width: 85px; height: 27px;
+    line-height: 27px;
+    margin-top: 20px;
   }
 
   /***** history-contents *****/
@@ -487,6 +497,9 @@
   }
   .history-contents .history-wrapper {
     padding-top: 15.833vw;
+  }
+  .history-contents .history-wrapper .history-box {
+    margin-top: 100px;
   }
   .history-contents .history-wrapper .history-box li {
     margin: 5.188vw 0;

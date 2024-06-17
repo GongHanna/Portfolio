@@ -232,6 +232,9 @@ body::-webkit-scrollbar-button {
   .title {
     font-size: var(--m-title);
   }
+  .code-desc {
+    font-size: 12px;
+  }
 
   /***** header *****/
   .header .logo {

@@ -5,7 +5,6 @@ body {
   color: #fff;
   font-family: var(--primary-fonts);
   font-weight: var(--font-regular);
-  /* overflow-x: hidden; */
 }
 article {
   padding: 0 10.885vw;
@@ -108,7 +107,7 @@ strong {
   font-size: var(--m-desc-sm);
 }
 .project .site-wrapper {
-  padding-top: 15.625vw;
+  padding-top: 300px;
   position: relative;
 }
 .project .site-wrapper .site-img {
@@ -125,7 +124,7 @@ strong {
   line-height: 41px;
   border: 1px solid #fff;
   position: absolute;
-  top: 12.396vw; right: 2.24vw;
+  top: 25%; right: 5%;
 }
 .project .site-wrapper .site-btn:hover {
   background-color: #fff;
@@ -293,8 +292,8 @@ strong {
   font-size: var(--sub-page-desc);
 }
 .review .button-box .site-btn {
-  width: 9.01vw; height: 2.76vw;
-  line-height: 2.76vw;
+  width: max-content;
+  padding: 10px 20px;
   border: 1px solid #fff;
   border-radius: var(--primary-border-radius);
   position: absolute;
@@ -318,7 +317,331 @@ strong {
   color: #fff;
 }
 /* 아트보다 */
-.review .button-box .artboda-site-btn {
-  width: 12.292vw;
-  margin-left: 2%;
+.review .button-box #artboda-btn1 {
+  left: 45%;
+}
+.review .button-box #artboda-btn2 {
+  left: 60%;
+}
+
+/* tablet */
+@media (max-width: 1200px) {
+  .desc {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  article {
+    padding: 0 10.885vw;
+    height: 80vh;
+  } 
+  .title {
+    font-size: var(--m-title);
+  }
+  .main-title {
+        font-size: var(--m-title);
+  }
+  
+  /***** project *****/
+  .project {
+    gap: 2%;
+  }
+  .project .text-wrapper .overview-list {
+    padding: 6.5vw 0 5.344vw;
+  }
+  .project .text-wrapper .overview-list .title {
+    margin-bottom: 20px;
+  }
+  .project .text-wrapper .overview-list .overview-text .date,
+  .project .text-wrapper .overview-list .overview-text .team-name {
+    margin-bottom: 20px;
+  }
+  /* 릴리바이레드 */
+  .project .text-wrapper .overview-list .overview-text .lilybyred-desc {
+    margin-bottom: 20px;
+  }
+  .project .text-wrapper .goal-list .title {
+    margin-bottom: 20px;
+  }
+  .project .site-wrapper {
+    padding-top: 160px;
+    position: relative;
+  }
+  .project .site-wrapper .site-img {
+    width: 100%;
+  }
+  /* 릴리바이레드 */
+  .project .site-wrapper .lilybyred-site-img {
+    margin-top: 100px;
+  }
+  .project .site-wrapper .site-btn {
+    font-size: 12px;
+    width: 6.979vw; height: 2.135vw;
+    line-height: 2.135vw;
+    width: 120px; height: 35px;
+    line-height: 35px;
+    top: 15%;
+  }
+  .project .site-wrapper .site-btn:hover {
+    background-color: #fff;
+    color: var(--primary-black);
+  }
+
+  /***** 담당 업무 및 Process *****/
+  .work {
+    background: url(./images/sub-page-skills-bg1.png) no-repeat 100% 0 / 300px, url(./images/sub-page-skills-bg2.png) no-repeat 0 100% / 300px;
+    height: auto;
+    padding-bottom: 150px;
+  }
+  .work .work-wrapper .work-list .desc strong {
+    font-size: var( --sub-page-des);
+  }
+
+  /***** view-more *****/
+  .view-more {
+    height: auto;
+    padding-bottom: 150px;
+  }
+  .view-more .view-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3.698vw;
+  }
+  .view-more .view-wrapper .view-btn {
+    bottom: -25%;
+    font-size: 14px;
+  }
+
+  /***** skills *****/
+  .skills {
+    background: url(./images/sub-page-skills-bg1.png) no-repeat 100% 0 / 300px, url(./images/sub-page-skills-bg2.png) no-repeat 0 100% / 300px;
+  }
+  .skills .skill-wrapper {
+    margin-top: 7.969vw;
+    grid-template-columns: minmax(300px, 400px) minmax(300px, 400px);
+    grid-template-rows: 392px;
+    gap: 5%;
+  }
+  .skills .skill-wrapper li .title {
+    margin-bottom: 25px;
+  }
+  .skills .skill-wrapper li .desc {
+    padding-bottom: 7px;
+  }
+
+  /***** review *****/
+  .review {
+    background: url(./images/sub-page-review-bg1.png) no-repeat 100% 0 / 300px, url(./images/sub-page-review-bg2.png) no-repeat 0 100% / 300px;
+    height: 100vh;
+  }
+  .review .text-wrapper .desc {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+  .review .text-wrapper .desc span {
+    font-size: 20px;
+  }
+  .review .text-wrapper .desc strong {
+    font-size: 20px;
+  }
+  .review .button-box {
+    font-size: var(--desc-sx);
+  }
+  .review .button-box .site-btn:first-of-type {
+    left: 45%;
+  }
+  .review .button-box .site-btn:last-of-type {
+    left: 60%;
+  }
+  /* 아트보다 */
+  .review .button-box #artboda-btn1 {
+    left: 40%;
+  }
+  .review .button-box #artboda-btn2 {
+    left: 60%;
+  }
+}
+
+/* mobile */
+@media (max-width: 500px) {
+  article {
+    padding: 0 10.885vw;
+  }
+  .main-title {
+    font-size: var(--m-title);
+  }
+  .title {
+    font-size: var(--m-desc-sm);
+  } 
+
+  /***** introduction *****/
+  .introduction {
+    background: url(./images/sub-page-arrow.png) no-repeat 50% 80% / 10px;
+    height: 50vh;
+  }
+  .introduction .intro-title {
+    padding-top: 150px;
+  }
+
+  /***** project *****/
+  .project {
+    gap: 2%;
+    height: auto;
+    grid-template-columns: 1fr;
+    padding-bottom: 50px;
+  }
+  .project .text-wrapper .overview-list {
+    padding: 10.5vw 0 7.344vw;
+  }
+  .project .text-wrapper .overview-list .overview-text .date,
+  .project .text-wrapper .overview-list .overview-text .team-name {
+    font-size: 12px;
+  }
+  /* 릴리바이레드 */
+  .project .text-wrapper .overview-list .overview-text .lilybyred-desc,
+  .project .text-wrapper .overview-list .overview-text .desc,
+  .project .text-wrapper .goal-list .goal-text .desc {
+    font-size: 14px;
+  }
+  /* 릴리바이레드 */
+  .project .site-wrapper .lilybyred-site-img {
+    margin-top: -80px;
+  }
+  .project .site-wrapper {
+    padding-top: 10px;
+  }
+  .project .site-wrapper .site-img {
+    width: 100%;
+  }
+
+  /***** 담당 업무 및 Process *****/
+  .work {
+    background: url(./images/sub-page-skills-bg1.png) no-repeat 100% 0 / 150px, url(./images/sub-page-skills-bg2.png) no-repeat 0 100% / 150px;
+    padding-bottom: 70px;
+  }
+  .work .main-title {
+    margin-top: 70px;
+  }
+  .work .work-wrapper .work-list .desc {
+    font-size: 14px;
+  }
+  .work .work-wrapper .work-list .desc strong {
+    font-size: 16px;
+  }
+  .work .work-wrapper .process-list {
+    margin-top: 30px;
+  }
+
+  /***** view-more *****/
+  .view-more {
+    padding-bottom: 200px;
+  }
+  .view-more .view-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 10vw;
+    gap: 20%;
+  }
+  .view-more .view-wrapper .right-contents img,
+  .view-more .view-wrapper .left-contents img  {
+    width: 100%;
+  }
+  .view-more .view-wrapper .view-btn {
+    font-size: 12px;
+  }
+  .view-more .view-wrapper .left-contents .view-btn {
+    bottom: -30%;
+  }
+  /* 아트보다 */
+  .view-more .view-wrapper .artboda-right-contents .report-img {
+    width: 100%;
+  }
+  #artboda-view-more .view-wrapper .artboda-right-contents  {
+    margin-left: 0;
+  }
+
+
+  /***** skills *****/
+  .skills {
+    background: url(./images/sub-page-skills-bg1.png) no-repeat 100% 0 / 150px, url(./images/sub-page-skills-bg2.png) no-repeat 0 100% / 150px;
+    height: auto;
+    padding-bottom: 100px;
+  }
+  .skills .skill-wrapper {
+    margin-top: 7.969vw;
+    grid-template-columns: minmax(300px, 400px);
+    grid-template-rows: 1fr 1fr;
+  }
+  .skills .skill-wrapper li {
+    padding: 50px 0 50px 30px;
+  }
+  .skills .skill-wrapper li .desc {
+    font-size: 14px;
+  }
+
+  /***** issue *****/
+  .issue {
+    height: auto;
+  }
+  .issue .main-title {
+    margin-bottom: 9.896vw;
+  }
+  .issue .issue-container section {
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .issue .issue-container section .issue-contents .issue-title {
+    font-size: var(--m-title);
+    margin-bottom: 20px;
+  }
+  .issue .issue-container section .issue-contents .issue-list {
+    padding: 42px 5vw;
+  }
+  .issue .issue-container section .issue-contents .issue-list li .issue-desc {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  .issue .issue-container section .solution-contents {
+    padding: 42px 5vw;
+  }
+  .issue .issue-container section .solution-contents li .solution-desc {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+
+  /***** review *****/
+  .review {
+    background: url(./images/sub-page-review-bg1.png) no-repeat 100% 0 / 150px, url(./images/sub-page-review-bg2.png) no-repeat 0 100% / 150px;
+    height: auto;
+    padding-bottom: 150px;
+  }
+  .review .text-wrapper .desc {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+  .review .text-wrapper .desc span {
+    font-size: var(--m-desc-sm);
+  }
+  .review .text-wrapper .desc strong {
+    font-size: var(--m-desc-sm);
+  }
+  .review .button-box {
+    font-size: var(--desc-sx);
+  }
+  .review .button-box .site-btn {
+    top: 85%; 
+  }
+  .review .button-box .site-btn:first-of-type {
+    left: 35%;
+  }
+  .review .button-box .site-btn:last-of-type {
+    left: 65%;
+  }
+  /* 아트보다 */
+  .review .button-box #artboda-btn1 {
+    left: 30%;
+  }
+  .review .button-box #artboda-btn2 {
+    left: 70%;
+  }
 }
