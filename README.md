@@ -8,6 +8,9 @@
 1. [디자인 / 코드 분석](https://www.figma.com/design/baswPO3c2rYX9IlshFbnqN/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4?node-id=0-1&t=UX1BhEMjkeDY28Mo-1, "피그마로 바로가기")
 2. [포트폴리오](https://gonghanna.github.io/Portfolio/)
 
+## 240626 ##
+- 포트폴리오 서브페이지 디자인(개인프로젝트- 히프노스 침대)
+
 ## 240620 ##
 - 서브페이지 project3.html / 리액트 관련 링크 연결 및 css 수정
 
