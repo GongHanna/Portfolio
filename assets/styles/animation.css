@@ -1,18 +1,5 @@
 @charset "utf-8";
 
-/* 메인 타이틀 */
-@keyframes tilted {
-  0% {
-    transform: rotateZ(-15deg);
-  }
-  50% {
-    transform: rotateZ(15deg);
-  }
-  100% {
-    transform: rotateZ(-15deg);
-  }
-}
-
 /* 바운스 */
 @keyframes bounce {
   from {

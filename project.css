@@ -44,6 +44,9 @@ strong {
 .header .logo {
   background: url(./images/logo-white.svg) no-repeat 0 50% / contain;
 }
+.header .logo a {
+  display: block;
+}
 /* side-menu */
 .header .side-menu-wrapper {
   color: var(--primary-black);
@@ -94,6 +97,10 @@ strong {
 .project .text-wrapper .overview-list .overview-text .lilybyred-desc {
   margin-bottom: 24px;
 }
+/* 히프노스 */
+.project .text-wrapper .overview-list .overview-text .hypnos-desc {
+  margin-bottom: 24px;
+}
 .project .text-wrapper .goal-list .title {
   margin-bottom: 24px;
 }
@@ -104,7 +111,7 @@ strong {
   margin-bottom: 12px;
 }
 .project .text-wrapper .goal-list .goal-text .desc strong {
-  font-size: var(--m-desc-sm);
+  font-size: var(--m-titl);
 }
 .project .site-wrapper {
   padding-top: 300px;
@@ -156,6 +163,41 @@ strong {
 }
 .skills .skill-wrapper li .desc {
   padding-bottom: 10px;
+}
+
+/***** guide *****/
+.guide {
+  background: url(./images/sub-page-skills-bg1.png) no-repeat 100% 0, url(./images/sub-page-skills-bg2.png) no-repeat 0 100%;
+}
+.guide .guide-wrapper {
+  margin-top: 7.969vw;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  grid-template-rows: 392px;
+  gap: 130px;
+  color: var(--primary-black);
+}
+.guide .guide-wrapper li {
+  background-color: #fff;
+  border-radius: var(--primary-border-radius);
+  padding: 70px 52px 30px;
+  display: grid;
+}
+.guide .guide-wrapper .keyword {
+  text-align: center;
+  padding: 70px 0;
+}
+.guide .guide-wrapper .keyword .desc {
+  padding-bottom: 10px;
+}
+.guide .guide-wrapper li .title {
+  margin-bottom: 35px;
+}
+.guide .guide-wrapper li img {
+  width: 90%;
+  align-self: flex-end;
+  margin: 0 auto;
 }
 
 /***** 담당 업무 및 Process *****/
@@ -437,6 +479,22 @@ strong {
     padding-bottom: 7px;
   }
 
+  /***** guide *****/
+  .guide {
+    background: url(./images/sub-page-skills-bg1.png) no-repeat 100% 0 / 300px, url(./images/sub-page-skills-bg2.png) no-repeat 0 100% / 300px;
+  }
+  .guide .guide-wrapper {
+    margin-top: 7.969vw;
+    gap: 3%;
+    grid-template-rows: 300px;
+  }
+  .guide .guide-wrapper .keyword .desc {
+    padding-bottom: 7px;
+  }
+  .guide .guide-wrapper li .title {
+    margin-bottom: 25px;
+  }
+
   /***** review *****/
   .review {
     background: url(./images/sub-page-review-bg1.png) no-repeat 100% 0 / 300px, url(./images/sub-page-review-bg2.png) no-repeat 0 100% / 300px;
@@ -587,6 +645,19 @@ strong {
     padding: 50px 0 50px 30px;
   }
   .skills .skill-wrapper li .desc {
+    font-size: 14px;
+  }
+
+  /***** guide *****/
+  .guide {
+    background: url(./images/sub-page-skills-bg1.png) no-repeat 100% 0 / 150px, url(./images/sub-page-skills-bg2.png) no-repeat 0 100% / 150px;
+    height: auto;
+    padding-bottom: 100px;
+  }
+  .guide .guide-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .guide .guide-wrapper .keyword .desc {
     font-size: 14px;
   }
 

@@ -53,6 +53,7 @@ body::-webkit-scrollbar-button {
   height: 30px;
   background: url(../../images/logo-black.svg) no-repeat 0 50% / contain;
   text-indent: -9999px;
+  cursor: pointer;
 }
 /* side-menu */
 .header .side-menu-wrapper {
