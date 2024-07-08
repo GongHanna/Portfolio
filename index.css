@@ -9,8 +9,7 @@
 .main-contents .animated-text {
   font-size: var(--title-main);
   position: absolute;
-  top: 30%;
-  left: 50%;
+  top: 30%; left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9;
 }
@@ -19,6 +18,7 @@
 }
 .main-contents .animated-text span.letter {
   display: inline-block;
+  animation: fadeInUp .5s forwards linear;
 }
 .main-contents .main-title2::after {
   content: "";

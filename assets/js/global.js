@@ -1,9 +1,9 @@
-// a 요소가 가지고 있는 기본 이벤트 제거
+/* a 요소가 가지고 있는 기본 이벤트 제거 */
 $('a[href="#"]').on('click', (e) => {
   e.preventDefault();
 });
 
-// 로고 클릭 시 페이지 맨 위로 이동
+/* 로고 클릭 시 페이지 맨 위로 이동 */
 $('.header .logo').on('click', (e) => {
   scrollTo({
     top: 0,
@@ -11,13 +11,13 @@ $('.header .logo').on('click', (e) => {
   });
 });
 
-// 헤더 햄버거 메뉴 버튼 클릭 시 이벤트 발생
+/* 헤더 햄버거 메뉴 버튼 클릭 시 이벤트 발생 */
 $('.header .side-menu-wrapper .side-menu-btn').on('click', () => {
   $('.header .side-menu-wrapper .side-menu-btn').toggleClass('active');
   $('.header .side-menu-wrapper .side-menu').slideToggle().toggleClass('show');
 });
 
-// 헤더 변경 스크롤트리거
+/* 헤더 변경 스크롤트리거 */
 gsap.registerPlugin(ScrollTrigger);
 const triggers = document.querySelectorAll('.common-trigger');
 

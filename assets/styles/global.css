@@ -103,7 +103,7 @@ body::-webkit-scrollbar-button {
   display: block;
   width: max-content;
   border-bottom: 0.26vw solid transparent;
-  transition: 0.3s;
+  transition: border-bottom 0.3s linear;
   opacity: 0.5;
 }
 /* 마우스 허버 이벤트 */
@@ -185,6 +185,7 @@ body::-webkit-scrollbar-button {
 }
 .footer .footer-menu li a {
   border-bottom: 0.26vw solid transparent;
+  transition: border-bottom 0.3s linear;
 }
 .footer .footer-menu li a:hover {
   border-bottom: 0.26vw solid #fff;

@@ -1,4 +1,4 @@
-// 해당 컨텐츠로 부드러운 이동
+/* 해당 컨텐츠로 부드러운 이동 */
 $(".header .side-menu-wrapper .side-menu li a").each(function (idx, elem) {
   $(elem).on("click", (e) => {
     e.preventDefault();
@@ -22,7 +22,25 @@ $(".footer .footer-menu li a").each(function (idx, elem) {
   });
 });
 
-// main-title animation
+/* 마우스 따라 움직이는 눈 모양 이벤트 */
+document.addEventListener('mousemove', (e) => {
+  const eyes = document.querySelectorAll('.eye');
+  eyes.forEach(eye => {
+    const eyeRect = eye.getBoundingClientRect();
+    const eyeCenterX = eyeRect.left + eyeRect.width / 2;
+    const eyeCenterY = eyeRect.top + eyeRect.height / 2;
+    const deltaX = e.clientX - eyeCenterX;
+    const deltaY = e.clientY - eyeCenterY;
+    const angle = Math.atan2(deltaY, deltaX);
+    const distance = Math.min(eyeRect.width / 10, Math.sqrt(deltaX * deltaX + deltaY * deltaY));
+    const offsetX = distance * Math.cos(angle);
+    const offsetY = distance * Math.sin(angle);
+
+    eye.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+  });
+});
+
+/* main-title animation */
 var animatedText = document.querySelectorAll(".animated-text");
 
 function animate(element) {
@@ -43,7 +61,7 @@ function animate(element) {
 
 Array.from(animatedText).map(animate);
 
-// 랜덤 텍스트 이벤트
+/* 랜덤 텍스트 이벤트 */
 $(function () {
   function movTxt(num) {
     const nextIdx =
@@ -65,7 +83,7 @@ $(function () {
   movTxt(0);
 });
 
-// 뷰포트기준 500px 넘을 때만 가로 스크롤 이벤트
+/* 뷰포트기준 500px 넘을 때만 가로 스크롤 이벤트 */
 let horizontalScrollTrigger;
 
 function initHorizontalScroll() {
@@ -115,12 +133,12 @@ $(window).resize(function () {
   initHorizontalScroll();
 });
 
-// skill 클릭 이벤트
+/* skill 클릭 이벤트 */
 $(".skill-contents .skill-wrapper li").on("click", (e) => {
   $(e.currentTarget).toggleClass("show").siblings().removeClass("show");
 });
 
-// 스크롤 시 text animation
+/* 스크롤 시 text animation */
 gsap.utils.toArray(".rolled-over-txt").forEach((txt) => {
   gsap
     .timeline({

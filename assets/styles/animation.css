@@ -1,5 +1,17 @@
 @charset "utf-8";
 
+/* main-title animation */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+  }
+  100% {
+      opacity: 1;
+      transform: translateZ(0);
+  }
+}
+
 /* 바운스 */
 @keyframes bounce {
   from {
